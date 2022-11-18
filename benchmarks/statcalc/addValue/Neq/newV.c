@@ -9,7 +9,7 @@ int count = 0;
 void addValue(double val)
 {
   count++;
-  //printf("%s\n","stat ");
+  //printf("%s\n","stat ");//change
   double currentVal = val;
   sum += currentVal;
   sumOfSquares += currentVal * currentVal;

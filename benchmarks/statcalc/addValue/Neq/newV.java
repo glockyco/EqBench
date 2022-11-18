@@ -9,7 +9,7 @@ public class newV {
 
     public static void addValue(double val) {
         count++;
-        //System.out.println("stat ");
+        //System.out.println("stat ");//change
         double currentVal = val;
         sum += currentVal;
         sumOfSquares += currentVal * currentVal;

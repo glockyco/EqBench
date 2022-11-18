@@ -8,7 +8,7 @@ public class newV {
             x = x * 5;
             i++;
         }
-        i = 1;
+        i = 1;//change
         while (i <= n) {
             x = x + i;
             i++;

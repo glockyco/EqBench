@@ -3,26 +3,26 @@ package benchmarks.reve.digits10.Eq;
 public class newV {
     int f(int n) {
         int result = 1;
-        int b = 1;
-        int retval = -1;
-        while (!(b == 0)) {
-            if (n < 10) {
-                retval = result;
-                b = 0;
-            } else if (n < 100) {
-                retval = result + 1;
-                b = 0;
-            } else if (n < 1000) {
-                retval = result + 2;
-                b = 0;
-            } else if (n < 10000) {
-                retval = result + 3;
-                b = 0;
-            } else {
-                n = n / 10000;
-                result = result + 4;
+        int b = 1;//change
+        int retval = -1;//change
+        while (!(b == 0)) {//change
+            if (n < 10) {//change
+                retval = result;//change
+                b = 0;//change
+            } else if (n < 100) {//change
+                retval = result + 1;//change
+                b = 0;//change
+            } else if (n < 1000) {//change
+                retval = result + 2;//change
+                b = 0;//change
+            } else if (n < 10000) {//change
+                retval = result + 3;//change
+                b = 0;//change
+            } else {//change
+                n = n / 10000;//change
+                result = result + 4;//change
             }
         }
-        return retval;
+        return retval;//change
     }
 }

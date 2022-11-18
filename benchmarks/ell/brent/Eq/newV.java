@@ -35,7 +35,7 @@ public class newV {
             xm = 0.5 * (a + b);
             tol2 = 2.0 * (tol1 = tol * Math.abs(x) + ZEPS);
             if (Math.abs(x - xm) <= (tol2 - 0.5 * (b - a))) {
-                //bxmin=x;
+                //bxmin=x;//change
                 return fx;
             }
             if (Math.abs(e) > tol1) {
@@ -92,7 +92,7 @@ public class newV {
                 }
             }
         }
-        //bxmin=x;
+        //bxmin=x;//change
         return fx;
     }
 

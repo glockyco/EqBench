@@ -10,7 +10,7 @@ public class newV {
     public static void addValue(double val) {
         count++;
         System.out.println("stat ");
-        //double currentVal = val;
+        //double currentVal = val;//change
         sum += val;//change
         sumOfSquares += val * val;//change
         mean = sum / count;

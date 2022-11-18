@@ -14,7 +14,7 @@ ejhash constructor(int x, long y, int z) {
 int hashCode(ejhash obj) {
     int h = obj.x;
 	h = h * 31 + (int) (obj.y ^ (obj.y >> 32));
-	//h = h * 31 + obj.z;
+	//h = h * 31 + obj.z;//change
 	return h;
 }
 void testCollision1(int x1, long y1, int z1,int x2, long y2, int z2) {

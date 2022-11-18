@@ -38,7 +38,7 @@ double snippet (double ax, double bx, double cx,double tol,double bxmin) {
       xm=0.5*(a+b);
       tol2=2.0*(tol1=tol*fabs(x)+ZEPS);
       if (fabs(x-xm) <= (tol2-0.5*(b-a))) {
-        //bxmin=x;
+        //bxmin=x;//change
         return fx;
       }
       if (fabs(e) > tol1) {
@@ -85,7 +85,7 @@ double snippet (double ax, double bx, double cx,double tol,double bxmin) {
         }
       }
     }
-    //bxmin=x;
+    //bxmin=x;//change
     return fx;
 }
 double SQR(double a) {

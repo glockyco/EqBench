@@ -5,7 +5,7 @@ int f(int n) {
         x = x * 1;
         i++;
     }
-    i = 1;
+    i = 1;//change
     while (i <= n) {
         x = x + i;
         i++;

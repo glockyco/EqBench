@@ -3,11 +3,11 @@ package benchmarks.reve.loop3.Eq;
 public class newV {
     int f(int n) {
         int i = 1;
-        int j = 2;
+        int j = 2;//change
         if (n < 1) {
             n = 1;
         }
-        while (i < n) {
+        while (i < n) {//change
             j = j + 2;
             i++;
         }

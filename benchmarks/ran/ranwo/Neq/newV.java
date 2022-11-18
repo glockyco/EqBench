@@ -29,8 +29,8 @@ public class newV {
         }
         k = idum / IQ1;
         idum = IA1 * (idum - k * IQ1) - k * IR1;
-        if (idum < 0 || idum == 0) {
-            idum += IM1;//change
+        if (idum < 0 || idum == 0) {//change
+            idum += IM1;
         }
         idum *= IMM1;//change
         k = idum2 / IQ2;
@@ -44,8 +44,8 @@ public class newV {
         if (iy < 1) {
             iy += IMM1;
         }
-        if ((temp = AM * iy) < RNMX) {
-            return RNMX;//temp
+        if ((temp = AM * iy) < RNMX) {//change
+            return RNMX;
         } else {
             return temp;
         }

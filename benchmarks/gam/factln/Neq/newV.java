@@ -5,7 +5,9 @@ public class newV {
 
     public static double factln(int n) {
         double[] a = new double[101];
-        //if (n < 0) System.out.println("Negative factorial in routine factln");
+        //if (n < 0) {//change
+        //    System.out.println("Negative factorial in routine factln");
+        //}
         if (n <= 1) {
             return 0.0;
         }

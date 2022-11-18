@@ -13,10 +13,10 @@ double snippet (double phi, double en, double ak){
     double enss=0;
     double q=0;
     double s=0;
-    //s=sin(phi);
+    //s=sin(phi);//change
     enss=en*s*s;
     cc=SQR(cos(phi));
-    //q=(1.0-(s*ak))*(1.0+(s*ak));
+    //q=(1.0-(s*ak))*(1.0+(s*ak));//change
     return s*(rf(cc,q,1.0)-enss*rj(cc,q,1.0,1.0+enss)/3.0);
   }
 double SQR(double a) {

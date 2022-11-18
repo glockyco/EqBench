@@ -37,7 +37,9 @@ public class newV {
                     sumc = sum;
                     sum = sums;
                 }
-                //if (term < test) break;//change
+                //if (term < test) {//change
+                //    break;
+                //}
                 odd = !odd;
                 n += 2;
             }
@@ -72,7 +74,7 @@ public class newV {
             h = h.multiply(new complex(ax, -ax));
             cs = new complex(0.5, 0.5).multiply((new complex(1.0, 0.0).minus(new complex(Math.cos(0.5 * pix2), Math.sin(0.5 * pix2)).multiply(h))));
         }
-        //if (x < 0.0) {change
+        //if (x < 0.0) {//change
         cs = new complex(-cs.getreal(), -cs.getimag());
         ;
         //}
@@ -147,8 +149,8 @@ public class newV {
             }
             cs = new complex(sumc + Math.log(t) + EULER, sums);
         }
-        if (x < 0.0 || x == 0.0) {
-            cs = new complex(cs.getreal(), -cs.getimag());//change
+        if (x < 0.0 || x == 0.0) {//change
+            cs = new complex(cs.getreal(), -cs.getimag());
         }
     }
 

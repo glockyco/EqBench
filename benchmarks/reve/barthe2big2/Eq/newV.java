@@ -5,10 +5,10 @@ public class newV {
         int i = 1;
         int x = 1;
         while (i <= n) {
-            x = x * 1;
+            x = x * 1;//change
             i++;
         }
-        i = 1;
+        i = 1;//change
         while (i <= n) {
             x = x + i;
             i++;

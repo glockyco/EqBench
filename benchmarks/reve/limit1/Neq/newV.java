@@ -7,8 +7,8 @@ public class newV {
         if (n <= 1) {
             r = n;
         } else {
-            r = f(n - 3);
-            r = n + (n - 1) + r;
+            r = f(n - 3);//change
+            r = n + (n - 1) + r;//change
         }
         return r;
     }

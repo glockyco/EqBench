@@ -1,13 +1,13 @@
 int f(int n) {
   int r;
   r = 0;
-  if (n <= 1) {
+  if (n <= 1) {//change
     r = n;
   } else {
     r = f(n - 1);
     r = n + r;
-    if (n == 10) {
-      r = 10;
+    if (n == 10) {//change
+      r = 10;//change
     }
   }
   return r;

@@ -59,7 +59,7 @@ public class newV {
             cn = 1.0 / Math.cosh(u);
             dn = cn;
             sn = Math.tanh(u);
-            bo = false;//insert
+            bo = false;//change(insert)
         }
     }
 }

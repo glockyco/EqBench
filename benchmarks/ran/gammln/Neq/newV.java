@@ -11,7 +11,7 @@ public class newV {
         x = xx;
         y = x;
         tmp = x + 5.5;
-        //tmp -= (x+0.5)*Math.log(tmp);
+        //tmp -= (x+0.5)*Math.log(tmp);//change
         ser = 1.000000000190015;
         for (j = 0; j < 6; j++) {
             ser += cof[j] * ++y;//change

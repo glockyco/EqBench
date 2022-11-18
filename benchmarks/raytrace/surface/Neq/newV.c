@@ -62,9 +62,9 @@ Light LightConstructor(int type, Vector3D v, float r, float g, float b) {
 }
 Surface SurfaceConstructor(float rval, float gval, float bval, float a, float d, float s, float n, float r, float t, float index){
       Surface obj;
-      obj.ir = rval; obj.ig = 10; obj.ib = bval;
+      obj.ir = rval; obj.ig = 10; obj.ib = bval;//change
       obj.ka = a; obj.kd = d; obj.ks = s; obj.ns = n;
-      obj.kr = r/I255; obj.kt = t; obj.nt = index;
+      obj.kr = r/I255; obj.kt = t; obj.nt = index;//change
       return obj;
 }
 Sphere SphereConstructor(Surface s, Vector3D c, float r) {

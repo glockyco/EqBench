@@ -41,13 +41,13 @@ public class newV {
 
         public Surface(float rval, float gval, float bval, float a, float d, float s, float n, float r, float t, float index) {
             ir = rval;
-            ig = 10;
+            ig = 10;//change
             ib = bval;//change
             ka = a;
             kd = d;
             ks = s;
             ns = n;
-            kr = r / I255;
+            kr = r / I255;//change
             kt = t;
             nt = index;//change
         }

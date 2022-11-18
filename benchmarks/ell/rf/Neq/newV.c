@@ -41,7 +41,7 @@ double snippet (double x, double y, double z) {
       yt=0.25*(yt+alamb);
       zt=0.25*(zt+alamb);
       ave=THIRD*(xt+yt+zt);
-      //delx=(ave-xt)/ave;
+      //delx=(ave-xt)/ave;//change
       dely=(ave-yt)/ave;
       delz=(ave-zt)/ave;
     } while (MAX(MAX(fabs(delx),fabs(dely)),fabs(delz)) > ERRTOL);

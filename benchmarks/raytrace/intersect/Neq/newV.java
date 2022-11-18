@@ -25,8 +25,9 @@ class newV {
                 return false;
             }
             t = (float) Math.sqrt(t);
-            //if (t < 0)
-            //return false;
+            //if (t < 0) {//change
+            //    return false;//change
+            //}
             return true;
         }
     }

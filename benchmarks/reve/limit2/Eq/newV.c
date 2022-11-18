@@ -1,7 +1,7 @@
 int f(int n) {
   int r;
   r = 0;
-  if (n <= 1) {
+  if (n <= 1) {//change
     r = n;
   } else {
     r = f(n - 1);

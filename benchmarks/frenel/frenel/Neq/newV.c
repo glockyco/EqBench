@@ -88,7 +88,7 @@ void snippet(double x){
 					sumc=sum;
 					sum=sums;
 				}
-				//if (term < test) break;
+				//if (term < test) break;//change
 				odd=!odd;
 				n += 2;
 			}

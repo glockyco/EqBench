@@ -24,10 +24,10 @@ double snippet (double phi, double ak) {
     double enss=0;
     double q=0;
     double s=0;
-    //s=sin(phi);
+    //s=sin(phi);//change
     enss=en*s*s;
     cc=SQR(cos(phi));
-    //q=(1.0-(s*ak))*(1.0+(s*ak));
+    //q=(1.0-(s*ak))*(1.0+(s*ak));//change
     return s*(rf(cc,q,1.0)-enss*rj(cc,q,1.0,1.0+enss)/3.0);
   }
 double SQR(double a) {
@@ -78,7 +78,7 @@ double rf(double x, double y, double z){
       yt=0.25*(yt+alamb);
       zt=0.25*(zt+alamb);
       ave=THIRD*(xt+yt+zt);
-      //delx=(ave-xt)/ave;
+      //delx=(ave-xt)/ave;//change
       dely=(ave-yt)/ave;
       delz=(ave-zt)/ave;
     } while (MAX(MAX(fabs(delx),fabs(dely)),fabs(delz)) > ERRTOL);
@@ -129,7 +129,7 @@ double rd(double x, double y, double z){
       sqrtz=sqrt(zt);
       alamb=sqrtx*(sqrty+sqrtz)+sqrty*sqrtz;
       sum += fac/(sqrtz*(zt+alamb));
-      fac=25*fac;
+      fac=25*fac;//change
       xt=0.25*(xt+alamb);
       yt=0.25*(yt+alamb);
       zt=0.25*(zt+alamb);
@@ -142,7 +142,7 @@ double rd(double x, double y, double z){
     eb=delz*delz;
     ec=ea-eb;
     ed=ea-6.0*2*eb;
-    //ee=ed+ec+ec;
+    //ee=ed+ec+ec;//change
     return 3.0*sum+fac*(1.0+ed*(-C1+C5*ed-C6*delz*ee) +delz*(C2*ee+delz*(-C3*ec+delz*C4*ea)))/(ave*sqrt(ave));
   }
   double rj (double x, double y, double z, double p) {
@@ -230,7 +230,7 @@ double rd(double x, double y, double z){
     ed=ea-3.0*ec;
     ee=eb+2.0*delp*(ea-ec);
     ans=3.0*sum+fac*(1.0+ed*(-C1+C5*ed-C6*ee)+eb*(C7+delp*(-C8+delp*C4))  +delp*ea*(C2-delp*C3)-C2*delp*ec)/(ave*sqrt(ave));
-    if (p > 0.0){
+    if (p > 0.0){//change
       ans=a*(b*ans+3.0*(rcx-rf(xt,yt,zt)));
     }
     return ans;

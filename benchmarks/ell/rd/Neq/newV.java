@@ -44,7 +44,7 @@ public class newV {
             sqrtz = Math.sqrt(zt);
             alamb = sqrtx * (sqrty + sqrtz) + sqrty * sqrtz;
             sum += fac / (sqrtz * (zt + alamb));
-            fac = 25 * fac;
+            fac = 25 * fac;//change
             xt = 0.25 * (xt + alamb);
             yt = 0.25 * (yt + alamb);
             zt = 0.25 * (zt + alamb);
@@ -57,7 +57,7 @@ public class newV {
         eb = delz * delz;
         ec = ea - eb;
         ed = ea - 6.0 * 2 * eb;
-        //ee=ed+ec+ec;
+        //ee=ed+ec+ec;//change
         return 3.0 * sum + fac * (1.0 + ed * (-C1 + C5 * ed - C6 * delz * ee) + delz * (C2 * ee + delz * (-C3 * ec + delz * C4 * ea))) / (ave * Math.sqrt(ave));
     }
 

@@ -51,8 +51,8 @@ public class newV {
                     q = fa / fc;
                     r = fb / fc;
                     p = s * (2.0 * xm * q * (q - r) - (b - a) * (r - 1.0));
-                    double one = 1.0;
-                    q = (q - one) * (r - one) * (s - one);
+                    double one = 1.0;//change
+                    q = (q - one) * (r - one) * (s - one);//change
                 }
                 if (p > 0.0) {
                     q = -q;

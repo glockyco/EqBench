@@ -38,7 +38,7 @@ public class newV {
             yt = 0.25 * (yt + alamb);
             zt = 0.25 * (zt + alamb);
             ave = THIRD * (xt + yt + zt);
-            //delx=(ave-xt)/ave;
+            //delx=(ave-xt)/ave;//change
             dely = (ave - yt) / ave;
             delz = (ave - zt) / ave;
         } while (MAX(MAX(Math.abs(delx), Math.abs(dely)), Math.abs(delz)) > ERRTOL);

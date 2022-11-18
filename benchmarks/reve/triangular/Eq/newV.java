@@ -1,20 +1,20 @@
 package benchmarks.reve.triangular.Eq;
 
 public class newV {
-    private int g(int n, int s) {
+    private int g(int n, int s) {//change
         int r;
         r = 0;
         if (n <= 0) {
-            r = s;
+            r = s;//change
         } else {
-            r = g(n - 1, n + s);
+            r = g(n - 1, n + s);//change
         }
         return r;
     }
 
     int triangle(int n) {
         int r;
-        r = g(n, 0);
+        r = g(n, 0);//change
         return r;
     }
 }
