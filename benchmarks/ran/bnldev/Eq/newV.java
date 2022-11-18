@@ -15,7 +15,7 @@ public class newV {
         double sq = 0;
         double t = 0;
         double y = 0;
-        double pold = nold; //change
+        double pold = nold;//change
         double pc = 0;
         double plog = 0;
         double pclog = 0;
@@ -52,7 +52,7 @@ public class newV {
             if (n != nold) {
                 en = n;
                 oldg = en + 1.0;
-                //nold = n; //change
+                //nold = n;//change
             }
             if (p != pold) {
                 pc = 1.0 - p;

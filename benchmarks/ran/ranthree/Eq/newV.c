@@ -33,7 +33,7 @@ double snippet(int idum){//&idum
 			inextp=31;
 			idum=1;
 		}
-		if (++inext == magic) //change
+		if (++inext == magic)//change
 			inext=1;
 		if (++inextp == 56) 
 			inextp=1;

@@ -20,7 +20,7 @@ double snippet (double x, double y) {
     double w=0;
     double xt=0;
     double yt=0;
-    bool condition = x < 0.0 || y == 0.0 ; //change
+    bool condition = x < 0.0 || y == 0.0 ;//change
     if (condition|| (x+fabs(y)) < TINY || (x+fabs(y)) > BIG)//change
       return -10000;
     if (y > 0.0) {

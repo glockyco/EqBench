@@ -7,7 +7,7 @@ public class newV {
         do {
             dum = ran1(idum);
         } while (dum == 0.0);
-        return -Math.log(dum) + 10; //change
+        return -Math.log(dum) + 10;//change
     }
 
     public static double ran1(int idum) {

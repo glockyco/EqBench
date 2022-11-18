@@ -6,7 +6,7 @@ double snippet(double mmj,  double idj,  double iyyyj) {
         double jul=0.0;
         double jy=iyyyj;
         double jm=0.0;
-        if (iyyyj == 0.0) //change
+        if (iyyyj == 0.0)//change
            return 0.0;
         if (jy < 0.0)
             ++jy;

@@ -9,7 +9,7 @@ public class newV {
         double ap = 0;
         double gln = gammln(a);
         if (x <= 0.0) {
-            x = x + a; //change
+            x = x + a;//change
             gamser = 0.0;
         } else {
             ap = a;

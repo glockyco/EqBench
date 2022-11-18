@@ -8,7 +8,7 @@ double snippet(int idumx, int idum) {
         do{
             dum=ran1(idum);
         }while (dum == 0.0);
-        return -log(dum) + 10; //change
+        return -log(dum) + 10;//change
 }
 double ran1(double idum){
         int IA=16807;

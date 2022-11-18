@@ -7,7 +7,7 @@ double snippet(double a, double b) {
                 return 0;//change
         }
         else {
-            if (a >= 0 && b>=0) //change: unsatisfiable condition
+            if (a >= 0 && b>=0)//change: unsatisfiable condition
                 return -a;
             else
                 return a;

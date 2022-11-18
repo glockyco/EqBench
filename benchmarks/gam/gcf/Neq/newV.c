@@ -22,7 +22,7 @@ double gcf(double a, double x, double gln){
       an = -i*(i-a);
       b += 2.0;
       d=an*d+b;
-      if (fabs(d) > FPMIN) //change
+      if (fabs(d) > FPMIN)//change
         d=FPMIN;
       c=b+an/c;
       if (fabs(c) < FPMIN) 

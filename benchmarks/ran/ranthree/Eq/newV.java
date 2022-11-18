@@ -36,7 +36,7 @@ public class newV {
             inextp = 31;
             idum = 1;
         }
-        if (++inext == magic) //change
+        if (++inext == magic)//change
         {
             inext = 1;
         }

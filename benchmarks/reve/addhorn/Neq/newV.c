@@ -7,7 +7,7 @@ int f(int i, int j)
   } else {
     if (i == 1) {//change
       r = j + 1;//change
-    } else { //change
+    } else {//change
       if (i == 2) {//change
       r = j;//change
     } else {//change

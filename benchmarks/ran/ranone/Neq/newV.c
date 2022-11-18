@@ -33,7 +33,7 @@ double snippet (int idum) {//idum is a global variable
         }
         k=idum/IQ;
         idum=IA*(idum-k*IQ)-IR*k;
-        if (idum < 0 || idum > 100) // change
+        if (idum < 0 || idum > 100)//change
             idum += IM;
         iy=iy/idum;
         if ((temp=AM*iy) > NDIV)

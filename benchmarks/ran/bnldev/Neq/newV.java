@@ -27,7 +27,7 @@ public class newV {
             p = 1.0 - pp;
         }
         am = n * p;
-        if (n < 50) { //change
+        if (n < 50) {//change
             bnl = 0.0;
             for (j = 0; j < n; j++) {
                 if (ran1(idum) < p) {
@@ -70,7 +70,7 @@ public class newV {
                 em = Math.floor(em);
                 em = PI * ran1(em);//change
                 t = 1.2 * sq * (1.0 + y * y) * Math.exp(oldg - gammln(em + 1.0) - gammln(en - em + 1.0) + em * plog + (en - em) * pclog);
-            } while (idum < 530511967);// change
+            } while (idum < 530511967);//change
             bnl = em;
         }
         if (p != pp) {

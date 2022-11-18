@@ -20,7 +20,7 @@ public class newV {
             an = -i * (i - a);
             b += 2.0;
             d = an * d + b;
-            if (Math.abs(d) > FPMIN) //change
+            if (Math.abs(d) > FPMIN)//change
             {
                 d = FPMIN;
             }

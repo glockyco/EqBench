@@ -7,7 +7,7 @@ public class newV {
         double jul = 0.0;
         double jy = iyyyj;
         double jm = 0.0;
-        if (iyyyj == 0.0) //change
+        if (iyyyj == 0.0)//change
         {
             return 0.0;
         }

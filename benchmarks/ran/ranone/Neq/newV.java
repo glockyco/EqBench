@@ -36,8 +36,7 @@ public class newV {
         }
         k = idum / IQ;
         idum = IA * (idum - k * IQ) - IR * k;
-        if (idum < 0 || idum > 100) // change
-        {
+        if (idum < 0 || idum > 100) {//change
             idum += IM;
         }
         iy = iy / idum;
