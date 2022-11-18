@@ -33,7 +33,9 @@ public class newV {
         if (o1.hashCode() == o2.hashCode()) {
             System.out.println("Solved hash collision 2");
         } else//change
+        {
             System.out.println("Not equal");//change
+        }
     }
 
     public static void testCollision3(long y1, long y2) {

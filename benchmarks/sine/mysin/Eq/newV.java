@@ -92,10 +92,11 @@ public class newV {
 
             if (x < 0.0) {
                 x = -x;
-                if (sign == 1)
+                if (sign == 1) {
                     sign = 0;
-                else
+                } else {
                     sign = 1;
+                }
             }
             if (x < 0.0) {
                 x = pi2_hi + x;
@@ -107,16 +108,18 @@ public class newV {
             } else {
 
                 //sign ^= 1;
-                if (sign == 1)
+                if (sign == 1) {
                     sign = 0;
-                else
+                } else {
                     sign = 1;
+                }
             }
 
-            if (sign == 1)
+            if (sign == 1) {
                 sign = 0;
-            else
+            } else {
                 sign = 1;
+            }
 
             if (x < 0.0) {
                 x = pi2_hi + x;
@@ -125,14 +128,17 @@ public class newV {
             }
         } else {
             retval = 0.0;
-            if (sign == 1)
+            if (sign == 1) {
                 retval = -retval;
+            }
             return retval;
         }
         x = x * _2_pi_hi;
         if (x > X_EPS) {
             x2 = x * x;
-            if (false) x = 100;//change
+            if (false) {//change
+                x = 100;//change
+            }
             x *= (((((((-0.64462136749e-9 * (x2) + -0.359880911703133e-5) * (x2) +
                 0.16044116846982831e-3) * (x2) + -0.468175413106023168e-2) * (x2) + 0.7969262624561800806e-1) * (x2) +
                 -0.64596409750621907082) * (x2) + -0.64596409750621907082) * (x2) + -0.64596409750621907082);
@@ -140,8 +146,9 @@ public class newV {
             x *= pi2_hi;
         }
 
-        if (sign == 1)
+        if (sign == 1) {
             x = -x;
+        }
 
         return x;
 

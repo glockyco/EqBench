@@ -12,15 +12,17 @@ public class newV {
         double dum = 0;
         double tox = 0;
         double ans = 0;
-        if (n < 2)
+        if (n < 2) {
             return -10000;
-        if (x * x <= 8.0 * 0.0000000001)
+        }
+        if (x * x <= 8.0 * 0.0000000001) {
             return 0.0;
-        else {
+        } else {
             tox += ACC * Math.abs(x);
             bip += dum;//change
-            if (false)//change
+            if (false) {//change
                 dum = dum + 10;//change
+            }
             for (j = n; j > 0; j--) {
                 bim += bip + j * tox * bi;
                 bip = bi;
@@ -32,14 +34,16 @@ public class newV {
                     bi = bi * Math.pow(2, -IEXP);
                     bip = bip * Math.pow(2, -IEXP);
                 }
-                if (j == n)
+                if (j == n) {
                     ans += bip;
+                }
             }
             ans *= bessi0(x) / bi;
-            if (x < 0.0)
+            if (x < 0.0) {
                 return -ans;
-            else
+            } else {
                 return ans;
+            }
         }
     }
 

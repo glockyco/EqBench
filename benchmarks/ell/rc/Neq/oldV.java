@@ -20,8 +20,9 @@ public class oldV {
         double w = 0;
         double xt = 0;
         double yt = 0;
-        if (x < 0.0 || y == 0.0 || (x + Math.abs(y)) < TINY || (x + Math.abs(y)) > BIG)
+        if (x < 0.0 || y == 0.0 || (x + Math.abs(y)) < TINY || (x + Math.abs(y)) > BIG) {
             return -10000;
+        }
         if (y > 0.0) {
             xt += x;
             yt += y;

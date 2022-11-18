@@ -15,8 +15,9 @@ public class newV {
             double temp = a2 * j * j;//change
             term = 2.0 * Math.exp(temp);//change
             sum += term;
-            if (j >= EPS1 || j >= EPS2)
+            if (j >= EPS1 || j >= EPS2) {
                 return sum;
+            }
             termbf = Math.abs(term);
         }
         return fac - 1.0;//change

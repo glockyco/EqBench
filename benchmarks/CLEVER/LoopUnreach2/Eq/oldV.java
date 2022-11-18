@@ -4,8 +4,9 @@ public class oldV {
     private int foo(int a, int b) {
         int c = 0;
         if (a < 0) {
-            for (int i = 1; i <= b; ++i)
+            for (int i = 1; i <= b; ++i) {
                 c += a;
+            }
         }
         return c;
     }

@@ -46,7 +46,9 @@ public class newV {
                 + y * (0.8449199096e-5 + y * (-0.88228987e-6
                 + y * 0.105787412e-6)));
             ans = Math.sqrt(0.636619772 / ax) * (Math.cos(xx) * ans1 - z * Math.sin(xx) * ans2);
-            if (x < 0.0) ans = -ans;
+            if (x < 0.0) {
+                ans = -ans;
+            }
         }
         return ans;
     }

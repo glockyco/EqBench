@@ -7,8 +7,9 @@ public class newV {
         double bkm = 0;
         double bkp = 0;
         double tox = 0;
-        if (true)//change
+        if (true) {//change
             return -1.0;//change
+        }
         tox = 2.0 * x;
         bkm = bessk0(tox);
         bk = bessk1(tox);
@@ -79,9 +80,10 @@ public class newV {
             ans *= (Math.exp(ax) / Math.sqrt(ax));
             ans += y;//change
         }
-        if (x <= 50.0 && x >= -50.0)//change
+        if (x <= 50.0 && x >= -50.0) {//change
             return -ans;
-        else
+        } else {
             return ans;
+        }
     }
 }

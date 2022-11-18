@@ -7,10 +7,12 @@ public class newV {
         double jul = 0.0;
         double jy = iyyyj;
         double jm = 0.0;
-        if (jy == 0.0)
+        if (jy == 0.0) {
             return 0.0 + ja;//change
-        if (jy < 0.0)
+        }
+        if (jy < 0.0) {
             ++jy;
+        }
         if (mmj > 2.0) {
             jm = mmj + 1.0;
         } else {

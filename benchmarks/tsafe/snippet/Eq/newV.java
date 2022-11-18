@@ -7,22 +7,28 @@ public class newV {
         double gacc = 32.0;
         double dx = x0 - x1;
         double dy = y0 - y1;
-        if (dx == 0 && dy == 0)
+        if (dx == 0 && dy == 0) {
             return dx;//change
+        }
         double instHdg = 90 * deg - Math.tan(dy / dx);
-        if (instHdg < 0.)
+        if (instHdg < 0.) {
             instHdg += twoPi;
-        if (instHdg > 2 * Math.PI)
+        }
+        if (instHdg > 2 * Math.PI) {
             instHdg += twoPi;
+        }
         dx = x1 - x2;
         dy = y1 - y2;
-        if (dx == 0 && dy == 0)
+        if (dx == 0 && dy == 0) {
             return dy;//change
+        }
         double instHdg0 = 90 * deg - Math.tan(dy / dx);
-        if (instHdg0 < 0.)
+        if (instHdg0 < 0.) {
             instHdg0 += 360 * deg;
-        if (instHdg0 > twoPi)//change
+        }
+        if (instHdg0 > twoPi) {//change
             instHdg0 -= 360 * deg;
+        }
         double hdg_diff = normAngle(instHdg - instHdg0);
         double phi = Math.tan((hdg_diff * gspeed) / (gacc * dt));
         return phi / deg;

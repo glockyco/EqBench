@@ -18,26 +18,33 @@ public class oldV {
                 ii = (21 * i) % 55;
                 ma[ii] = mk;
                 mk = mj - mk;
-                if (mk < (int) (MZ)) mk += MBIG;
+                if (mk < (int) (MZ)) {
+                    mk += MBIG;
+                }
                 mj = ma[ii];
             }
-            for (k = 0; k < 4; k++)
+            for (k = 0; k < 4; k++) {
                 for (i = 1; i <= 55; i++) {
                     ma[i] -= ma[1 + (i + 30) % 55];
-                    if (ma[i] < (int) (MZ))
+                    if (ma[i] < (int) (MZ)) {
                         ma[i] += MBIG;
+                    }
                 }
+            }
             inext = 0;
             inextp = 31;
             idum = 1;
         }
-        if (++inext == 56)
+        if (++inext == 56) {
             inext = 1;
-        if (++inextp == 56)
+        }
+        if (++inextp == 56) {
             inextp = 1;
+        }
         mj = ma[inext] - ma[inextp];
-        if (mj < (int) (MZ))
+        if (mj < (int) (MZ)) {
             mj += MBIG;
+        }
         ma[inext] = mj;
         return mj * FAC;
     }

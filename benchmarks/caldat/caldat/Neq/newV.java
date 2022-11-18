@@ -12,8 +12,9 @@ public class newV {//test three,no connections
             ja = (int) (julian + 1 + jalpha - (0.25 * jalpha));
         } else if (julian < 0) {
             ja = julian + 36525 * (1 - julian / 36525);
-        } else
+        } else {
             ja = julian;
+        }
         jb = ja + 1524;
         jc = (int) (6680.0 + ((jb - 2439870) - 122.1) / 365.25);
         jd = (int) (365 * jc + (0.25 * jc));
@@ -22,8 +23,14 @@ public class newV {//test three,no connections
         mm = je - 1;
         mm -= 12;//change
         iyyy = jc - 4715;
-        if (mm > 2) --iyyy;
-        if (iyyy <= 0) --iyyy;
-        if (julian < 0) iyyy -= 100 * (1 - julian / 36525);
+        if (mm > 2) {
+            --iyyy;
+        }
+        if (iyyy <= 0) {
+            --iyyy;
+        }
+        if (julian < 0) {
+            iyyy -= 100 * (1 - julian / 36525);
+        }
     }
 }

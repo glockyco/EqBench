@@ -63,8 +63,9 @@ public class newV {
         double zt = 0;
         double e2 = 0;
         double e3 = 0;
-        if (MIN(MIN(x, y), z) < 0.0 || MIN(MIN(x + y, x + z), y + z) < TINY || MAX(MAX(x, y), z) > BIG)
+        if (MIN(MIN(x, y), z) < 0.0 || MIN(MIN(x + y, x + z), y + z) < TINY || MAX(MAX(x, y), z) > BIG) {
             return -10000;
+        }
         xt = x;
         yt = y;
         zt = z;
@@ -116,8 +117,9 @@ public class newV {
         double xt = 0;
         double yt = 0;
         double zt = 0;
-        if (CheckCond(x, y, z, TINY, BIG))//change
+        if (CheckCond(x, y, z, TINY, BIG)) {//change
             return -1000;
+        }
         xt = x;
         yt = y;
         zt = z;
@@ -190,8 +192,9 @@ public class newV {
         double xt = 0;
         double yt = 0;
         double zt = 0;
-        if (MIN(MIN(x, y), z) < 0.0 || MIN(MIN(x + y, x + z), MIN(y + z, Math.abs(p))) < TINY || MAX(MAX(x, y), MAX(z, Math.abs(p))) > BIG)
+        if (MIN(MIN(x, y), z) < 0.0 || MIN(MIN(x + y, x + z), MIN(y + z, Math.abs(p))) < TINY || MAX(MAX(x, y), MAX(z, Math.abs(p))) > BIG) {
             return -1000;
+        }
         sum = 0.0;
         fac = 1.0;
         if (p > 0.0) {
@@ -260,8 +263,9 @@ public class newV {
         double xt = 0;
         double yt = 0;
         boolean condition = x < 0.0 || y == 0.0; //change
-        if (condition || (x + Math.abs(y)) < TINY || (x + Math.abs(y)) > BIG)//change
+        if (condition || (x + Math.abs(y)) < TINY || (x + Math.abs(y)) > BIG) {//change
             return -10000;
+        }
         if (y > 0.0) {
             xt += x;
             yt += y;

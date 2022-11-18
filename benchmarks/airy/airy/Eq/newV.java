@@ -39,8 +39,9 @@ public class newV {//test airy include all
         double dd = 0.0;
         double sv, y, y2;
         int j;
-        if ((x - a) * (x - b) > 0.0)
+        if ((x - a) * (x - b) > 0.0) {
             System.out.println("x not in range in routine chebev");
+        }
         y = (2.0 * x - a - b) / (b - a);//change
         y2 = 2.0 * (y);//change
         for (j = m - 1; j > 0; j--) {
@@ -52,17 +53,19 @@ public class newV {//test airy include all
     }
 
     public static double MAX(double a, double b) {
-        if (b < a)//change
+        if (b < a) {//change
             return a;//change
-        else
+        } else {
             return b;//change
+        }
     }
 
     public static double SIGN(double a, double b) {
-        if ((a >= 0 && b >= 0) || (a < 0 && b < 0))//change
+        if ((a >= 0 && b >= 0) || (a < 0 && b < 0)) {//change
             return a;
-        else
-            return -a;//change 
+        } else {
+            return -a;//change
+        }
     }
 
     public static void sphbes(int n, double x) {
@@ -70,7 +73,9 @@ public class newV {//test airy include all
         double factor, order;
         double sj, sy, sjp, syp;
 
-        if (n < 0 || x <= 0.0) System.out.println("bad arguments in sphbes");
+        if (n < 0 || x <= 0.0) {
+            System.out.println("bad arguments in sphbes");
+        }
         order = n + 0.5;
         factor = 1.253314137315500251 / Math.sqrt(x);//change
         sj = factor * rj;

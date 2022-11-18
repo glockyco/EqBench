@@ -26,7 +26,9 @@ public class oldV {
                 em[i] = a;
                 en[i] = (emc = Math.sqrt(emc));
                 c = 0.5 * (a + emc);
-                if (Math.abs(a - emc) <= CA * a) break;
+                if (Math.abs(a - emc) <= CA * a) {
+                    break;
+                }
                 emc *= a;
                 a = c;
             }

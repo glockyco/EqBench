@@ -2,9 +2,10 @@ package benchmarks.airy.MAX.Eq;
 
 public class oldV {
     public static double snippet(double a, double b) {
-        if (b > a)
+        if (b > a) {
             return b;
-        else
+        } else {
             return a;
+        }
     }
 }

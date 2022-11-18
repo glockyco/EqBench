@@ -37,11 +37,15 @@ public class oldV {
                     sumc = sum;
                     sum = sums;
                 }
-                if (term < test) break;
+                if (term < test) {
+                    break;
+                }
                 odd = !odd;
                 n += 2;
             }
-            if (k > MAXIT) System.out.println("series failed in frenel");
+            if (k > MAXIT) {
+                System.out.println("series failed in frenel");
+            }
             cs = new complex(sumc, sums);
         } else {
             pix2 = PI * ax * ax;
@@ -60,9 +64,13 @@ public class oldV {
                 cc = b.plus(new complex(a, 0.0).divide(cc));
                 del = cc.multiply(d);
                 h = h.multiply(del);
-                if (Math.abs(del.getreal() - 1.0) + Math.abs(del.getimag()) <= EPS) break;
+                if (Math.abs(del.getreal() - 1.0) + Math.abs(del.getimag()) <= EPS) {
+                    break;
+                }
             }
-            if (k > MAXIT) System.out.println("cf failed in frenel");
+            if (k > MAXIT) {
+                System.out.println("cf failed in frenel");
+            }
             h = h.multiply(new complex(ax, -ax));
             cs = new complex(0.5, 0.5).multiply((new complex(1.0, 0.0).minus(new complex(Math.cos(0.5 * pix2), Math.sin(0.5 * pix2)).multiply(h))));
         }
@@ -100,9 +108,13 @@ public class oldV {
                 c = b.plus(new complex(a, 0.0).divide(c));//c=b+a/c;
                 del = c.multiply(d);                //del=c*d;
                 h = h.multiply(del);//h *= del;
-                if (Math.abs(del.getreal() - 1.0) + Math.abs(del.getreal()) <= EPS) break;
+                if (Math.abs(del.getreal() - 1.0) + Math.abs(del.getreal()) <= EPS) {
+                    break;
+                }
             }
-            if (i >= MAXIT) System.out.println("cf failed in cisi");
+            if (i >= MAXIT) {
+                System.out.println("cf failed in cisi");
+            }
             h = new complex(Math.cos(t), -Math.sin(t)).multiply(h);
             cs = new complex(-h.getreal(), h.getimag()).plus(new complex(0.0, PIBY2));
         } else {
@@ -126,14 +138,20 @@ public class oldV {
                         sumc = sum;
                         sum = sums;
                     }
-                    if (err < EPS) break;
+                    if (err < EPS) {
+                        break;
+                    }
                     odd = !odd;
                 }
-                if (k > MAXIT) System.out.println("maxits exceeded in cisi");
+                if (k > MAXIT) {
+                    System.out.println("maxits exceeded in cisi");
+                }
             }
             cs = new complex(sumc + Math.log(t) + EULER, sums);
         }
-        if (x < 0.0) cs = new complex(cs.getreal(), -cs.getimag());
+        if (x < 0.0) {
+            cs = new complex(cs.getreal(), -cs.getimag());
+        }
     }
 }
 

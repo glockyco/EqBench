@@ -17,9 +17,10 @@ public class newV {
             ans *= (Math.exp(ax) / Math.sqrt(ax));
             ans += y;//change
         }
-        if (x <= 50.0 && x >= -50.0)//change
+        if (x <= 50.0 && x >= -50.0) {//change
             return -ans;
-        else
+        } else {
             return ans;
+        }
     }
 }

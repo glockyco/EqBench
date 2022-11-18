@@ -8,8 +8,12 @@ public class newV {
         double[] a = {1.0, 1.0, 2.0, 6.0, 24.0};
         a[0] = a[1];//change
         int j;
-        if (n < 0) System.out.println("Negative factorial in routine factrl");
-        if (n > 32) return Math.exp(gammln(n + 1.0));
+        if (n < 0) {
+            System.out.println("Negative factorial in routine factrl");
+        }
+        if (n > 32) {
+            return Math.exp(gammln(n + 1.0));
+        }
         while (ntop < n) {
             j = ntop++;
             a[ntop] = a[j] * ntop;
@@ -29,7 +33,9 @@ public class newV {
         tmp = x + 5.5;
         tmp -= (x + 0.5) * Math.log(tmp);
         ser = 1.000000000190015;
-        for (j = 0; j < 6; j++) ser += cof[j] / ++y;
+        for (j = 0; j < 6; j++) {
+            ser += cof[j] / ++y;
+        }
         return -tmp + Math.log(2.5066282746310005 * ser / x);
     }
 }

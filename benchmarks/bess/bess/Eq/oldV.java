@@ -7,8 +7,9 @@ public class oldV {
         double bkm = 0;
         double bkp = 0;
         double tox = 0;
-        if (n < 2)
+        if (n < 2) {
             return -1000;
+        }
         tox = 2.0 * x;
         bkm = bessk0(tox);
         bk = bessk1(tox);
@@ -81,10 +82,11 @@ public class oldV {
             ans = 0.39894228 + y * (-0.3988024e-1 + y * (-0.362018e-2 + y * (0.163801e-2 + y * (-0.1031555e-1 + y * ans))));
             ans *= (Math.exp(ax) / Math.sqrt(ax));
         }
-        if (x < 0.0)
+        if (x < 0.0) {
             return -ans;
-        else
+        } else {
             return ans;
+        }
     }
 
     public static double bessi(double n, double x) {
@@ -98,11 +100,12 @@ public class oldV {
         double dum = 0;
         double tox = 0;
         double ans = 0;
-        if (n < 2)
+        if (n < 2) {
             return -10000;
-        if (x * x <= 8.0 * 0.0000000001)
+        }
+        if (x * x <= 8.0 * 0.0000000001) {
             return 0.0;
-        else {
+        } else {
             tox += ACC * Math.abs(x);
             bip += 0.0;
             for (j = n; j > 0; j--) {
@@ -116,14 +119,16 @@ public class oldV {
                     bi = bi * Math.pow(2, -IEXP);
                     bip = bip * Math.pow(2, -IEXP);
                 }
-                if (j == n)
+                if (j == n) {
                     ans += bip;
+                }
             }
             ans *= bessi0(x) / bi;
-            if (x < 0.0)
+            if (x < 0.0) {
                 return -ans;
-            else
+            } else {
                 return ans;
+            }
         }
     }
 
@@ -142,12 +147,13 @@ public class oldV {
         double sum = 0;
         double tox = 0;
         double ans = 0;
-        if (n < 2)
+        if (n < 2) {
             return -1000;
+        }
         ax = Math.abs(x);
-        if (ax * ax <= 0)
+        if (ax * ax <= 0) {
             return 0.0;
-        else if (ax > (n)) {
+        } else if (ax > (n)) {
             tox = 2.0 / ax;
             bjm = bessj0(ax);
             bj = bessj1(ax);
@@ -177,19 +183,22 @@ public class oldV {
                     ans *= Math.pow(2, -IEXP);
                     sum *= Math.pow(2, -IEXP);
                 }
-                if (jsum)
+                if (jsum) {
                     sum += bj;
+                }
                 jsum = !jsum;
-                if (j == n)
+                if (j == n) {
                     ans = bjp;
+                }
             }
             sum = 2.0 * sum - bj;
             ans /= sum;
         }
-        if (x < 0.0)
+        if (x < 0.0) {
             return -ans;
-        else
+        } else {
             return ans;
+        }
     }
 
     public static double bessj0(double x) {
@@ -238,8 +247,9 @@ public class oldV {
             ans1 = 1.0 + y * (0.183105e-2 + y * (-0.3516396496e-4 + y * (0.2457520174e-5 + y * (-0.240337019e-6))));
             ans2 = 0.04687499995 + y * (-0.2002690873e-3 + y * (0.8449199096e-5 + y * (-0.88228987e-6 + y * 0.105787412e-6)));
             ans = Math.sqrt(0.636619772 / ax) * (Math.cos(xx) * ans1 - z * Math.sin(xx) * ans2);
-            if (x < 0.0)
+            if (x < 0.0) {
                 ans = -ans;
+            }
         }
         return ans;
     }

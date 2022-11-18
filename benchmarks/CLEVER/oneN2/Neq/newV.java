@@ -2,16 +2,18 @@ package benchmarks.CLEVER.oneN2.Neq;
 
 public class newV {
     private int lib(int x) {
-        if (x > 10)
+        if (x > 10) {
             return 11;
-        else
+        } else {
             return x + 1;
+        }
     }
 
     int client(int x) {
-        if (x > lib(x))
+        if (x > lib(x)) {
             return x;
-        else
+        } else {
             return lib(x);
+        }
     }
 }

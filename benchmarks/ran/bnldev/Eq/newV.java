@@ -21,28 +21,33 @@ public class newV {
         double pclog = 0;
         double en = 0;
         double oldg = 0;
-        if (pp <= 0.5)
+        if (pp <= 0.5) {
             p = pp;
-        else
+        } else {
             p = 1.0 - pp;
+        }
         am = n * p;
         if (n < 25) {
             bnl = 0.0;
-            for (j = 0; j < n; j++)
-                if (ran1(idum) < p)
+            for (j = 0; j < n; j++) {
+                if (ran1(idum) < p) {
                     ++bnl;
+                }
+            }
         } else if (am < 1.0) {
             g = Math.exp(-am);
             t = 1.0;
             for (j = 0; j <= n; j++) {
                 t *= ran1(idum);
-                if (t < g)
+                if (t < g) {
                     break;
+                }
             }
-            if (j <= n)
+            if (j <= n) {
                 bnl = j;
-            else
+            } else {
                 bnl = n;
+            }
         } else {
             if (n != nold) {
                 en = n;
@@ -67,8 +72,9 @@ public class newV {
             } while (ran1(idum) > t && idum < 530511967);
             bnl = em;
         }
-        if (p != pp)
+        if (p != pp) {
             bnl = n - bnl;
+        }
         return bnl;
     }
 
@@ -80,8 +86,9 @@ public class newV {
         tmp = x + 5.5;
         tmp -= (x + 0.5) * Math.log(tmp);
         ser = 1.000000000190015;
-        for (j = 0; j < 6; j++)
+        for (j = 0; j < 6; j++) {
             ser += cof[j] / ++y;
+        }
         return -tmp + Math.log(2.5066282746310005 * ser / x);
     }
 
@@ -100,30 +107,35 @@ public class newV {
         int j, k;
         double temp;
         if (idum <= 0 || iy == 0) {
-            if (-idum < 1)
+            if (-idum < 1) {
                 idum = 1;
-            else
+            } else {
                 idum = -idum;
+            }
             for (j = NTAB + 7; j >= 0; j--) {
                 k = (int) (idum / IQ);
                 idum = IA * (idum - k * IQ) - IR * k;
-                if (idum < 0)
+                if (idum < 0) {
                     idum += IM;
-                if (j < NTAB)
+                }
+                if (j < NTAB) {
                     iv[j] = (int) idum;
+                }
             }
             iy = iv[0];
         }
         k = (int) (idum / IQ);
         idum = IA * (idum - k * IQ) - IR * k;
-        if (idum < 0)
+        if (idum < 0) {
             idum += IM;
+        }
         j = iy / NDIV;
         iy = iv[j];
         iv[j] = (int) idum;
-        if ((temp = AM * iy) > RNMX)
+        if ((temp = AM * iy) > RNMX) {
             return RNMX;
-        else
+        } else {
             return temp;
+        }
     }
 }

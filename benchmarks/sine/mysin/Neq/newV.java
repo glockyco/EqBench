@@ -92,10 +92,11 @@ public class newV {
 
             if (x < 0.0) {
                 x = -x;
-                if (sign == 1)
+                if (sign == 1) {
                     sign = 0;
-                else
+                } else {
                     sign = 1;
+                }
             }
             if (x < 0.0) {
                 x = pi2_hi + x;
@@ -107,16 +108,18 @@ public class newV {
             } else {
 
                 //sign ^= 1;
-                if (sign == 1)
+                if (sign == 1) {
                     sign = 0;
-                else
+                } else {
                     sign = 1;
+                }
             }
 
-            if (sign == 1)
+            if (sign == 1) {
                 sign = 0;
-            else
+            } else {
                 sign = 1;
+            }
 
             if (x < 0.0) {
                 x = pi2_hi + x;
@@ -125,8 +128,9 @@ public class newV {
             }
         } else {
             retval = 0.0;
-            if (sign == 1)
+            if (sign == 1) {
                 retval = -retval;
+            }
             return retval;
         }
         x = x * _2_pi_hi;
@@ -139,8 +143,9 @@ public class newV {
             x *= pi2_hi;
         }
 
-        if (sign == 1 || sign == 0)//change
+        if (sign == 1 || sign == 0) {//change
             x = -x;
+        }
 
         return x;
 

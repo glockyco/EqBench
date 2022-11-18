@@ -11,15 +11,19 @@ public class newV {
                 path = 2;
             }
             if (y > 8) {
-                if (path == 1)
+                if (path == 1) {
                     result = 3;
-                if (path == 2)
+                }
+                if (path == 2) {
                     result = 13 + 5;//change
+                }
             } else {
-                if (path == 1)
+                if (path == 1) {
                     result = 4;
-                if (path == 2)
+                }
+                if (path == 2) {
                     result = 14;
+                }
             }
         }
         result = result + 10;//change

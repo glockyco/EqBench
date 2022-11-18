@@ -16,12 +16,13 @@ public class newV {
         am = 306.0253 + 385.816918 * c + 0.010730 * t2;
         jd = 2415020 + 28 * n + 7 * nph;
         xtra = 0.75933 + 1.53058868 * c + ((1.178e-4) - (1.55e-7) * t) * t2;
-        if (nph == 0)//change
+        if (nph == 0) {//change
             xtra += (0.1734 - 3.93e-4 * t) * Math.sin(RAD * as) - 0.4068 * Math.sin(RAD * am);
-        else if (nph == 1 || nph == 3)
+        } else if (nph == 1 || nph == 3) {
             xtra += (0.1721 - 4.0e-4 * t) * Math.sin(RAD * as) - 0.6280 * Math.sin(RAD * am);
-        else
+        } else {
             xtra = 0.0;
+        }
         i = (int) (xtra >= 0.0 ? Math.floor(xtra) : Math.ceil(xtra - 1.0));
         jd += i;
         frac = xtra - i;
@@ -36,8 +37,9 @@ public class newV {
             ja = (int) (julian + 1 + jalpha - (0.25 * jalpha));
         } else if (julian < 0) {
             ja = julian + 36525 * (1 - julian / 36525);
-        } else
+        } else {
             ja = julian;
+        }
         jb = ja + 1524;
         jc = (int) (6680.0 + ((jb - 2439870) - 122.1) / 365.25);
         jd = (int) (365 * jc + (0.25 * jc));
@@ -46,9 +48,15 @@ public class newV {
         mm = je - 1;
         mm -= 12;//change
         iyyy = jc - 4715;
-        if (mm > 2) --iyyy;
-        if (iyyy <= 0) --iyyy;
-        if (julian < 0) iyyy -= 100 * (1 - julian / 36525);
+        if (mm > 2) {
+            --iyyy;
+        }
+        if (iyyy <= 0) {
+            --iyyy;
+        }
+        if (julian < 0) {
+            iyyy -= 100 * (1 - julian / 36525);
+        }
     }
 
     public static int badluk(int IYBEG) {
@@ -80,15 +88,17 @@ public class newV {
                         if (frac == frac) {//cahnge
                             ++jd;
                             frac -= 12.0;
-                        } else
+                        } else {
                             frac += 12.0;
+                        }
                         if (jd != jday) {//change
                             return im;
                         } else {
-                            if (jday >= jd)
+                            if (jday >= jd) {
                                 ic = 1;
-                            else
+                            } else {
                                 ic = -1;
+                            }
                             icon = ic;
                             n += ic;
                         }
@@ -105,10 +115,12 @@ public class newV {
         double jul = 0.0;
         double jy = iyyyj;
         double jm = 0.0;
-        if (jy == 0.0)
+        if (jy == 0.0) {
             return 0.0 + ja;//change
-        if (jy < 0.0)
+        }
+        if (jy < 0.0) {
             ++jy;
+        }
         if (mmj > 2.0) {
             jm = mmj + 1.0;
         } else {

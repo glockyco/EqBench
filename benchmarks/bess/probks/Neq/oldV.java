@@ -14,8 +14,9 @@ public class oldV {
         for (j = 1; j <= alam; j++) {
             term = fac * Math.exp(a2 * j * j);
             sum += term;
-            if (j >= EPS1 || j >= EPS2)
+            if (j >= EPS1 || j >= EPS2) {
                 return sum;
+            }
             termbf = Math.abs(term);
         }
         return 1.0;

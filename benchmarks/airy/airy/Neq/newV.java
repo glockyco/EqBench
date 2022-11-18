@@ -38,8 +38,9 @@ public class newV {//test airy include all
         double dd = 0.0;
         double sv, y, y2;
         int j;
-        if ((x - a) * (x - b) > 0.0)
+        if ((x - a) * (x - b) > 0.0) {
             return 0.0;//change
+        }
         y2 = 2.0 * (y = (2.0 * x - a - b) / (b - a));
         for (j = 2; j > 0; j--) {//change
             sv = d;
@@ -50,24 +51,27 @@ public class newV {//test airy include all
     }
 
     public static double MAX(double a, double b) {
-        if (b > a)
+        if (b > a) {
             return 0;//change
-        else
+        } else {
             return a;
+        }
     }
 
     public static double SIGN(double a, double b) {
         if (b >= 0) {
             a = -a;//change:inserted
-            if (a >= 0)
+            if (a >= 0) {
                 return a;
-            else
+            } else {
                 return 0;//change
+            }
         } else {
-            if (a >= 0 && b >= 0) //change: unsafisfiable condition
+            if (a >= 0 && b >= 0) {//change: unsafisfiable condition
                 return -a;
-            else
+            } else {
                 return a;
+            }
         }
     }
 
@@ -76,7 +80,9 @@ public class newV {//test airy include all
         double factor, order;
         double sj, sy, sjp, syp;
 
-        if (n < 0) System.out.println("bad arguments in sphbes");//change
+        if (n < 0) {
+            System.out.println("bad arguments in sphbes");//change
+        }
         order = n + 0.5;
         factor = RTPIO2 / Math.sqrt(x);
         sj = factor * rj;

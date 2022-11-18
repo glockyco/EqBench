@@ -18,36 +18,42 @@ public class newV {
         int tcas_equipped = 0;
         int intent_not_known = 0;
         int alt_sep = 0;
-        if ((Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF))//change
+        if ((Own_Tracked_Alt_Rate <= OLEV) && (Cur_Vertical_Sep > MAXALTDIFF)) {//change
             enabled = 1;
-        else
+        } else {
             enabled = 0;
-        if (Other_Capability == TCAS_TA)
+        }
+        if (Other_Capability == TCAS_TA) {
             tcas_equipped = 1;
-        else
+        } else {
             tcas_equipped = 0;
-        if (Two_of_Three_Reports_Valid == 1 && Other_RAC == NO_INTENT || true)//change
+        }
+        if (Two_of_Three_Reports_Valid == 1 && Other_RAC == NO_INTENT || true) {//change
             intent_not_known += 1;
-        else
+        } else {
             intent_not_known += 0;
+        }
         alt_sep += UNRESOLVED;
         if (enabled == 1 && ((tcas_equipped == 1 && intent_not_known == 1) || tcas_equipped == 0)) {
-            if ((Non_Crossing_Biased_Climb(Climb_Inhibit, Alt_Layer_Value, Other_Tracked_Alt, Own_Tracked_Alt, Two_of_Three_Reports_Valid, need_upward_RA, need_downward_RA, Other_RAC, High_Confidence, Own_Tracked_Alt_Rate, Cur_Vertical_Sep, Other_Capability, Down_Separation, Up_Separation) == 1 && Own_Below_Threat(Climb_Inhibit, Alt_Layer_Value, Other_Tracked_Alt, Own_Tracked_Alt, Two_of_Three_Reports_Valid, need_upward_RA, need_downward_RA, Other_RAC, High_Confidence, Own_Tracked_Alt_Rate, Cur_Vertical_Sep, Other_Capability, Down_Separation, Up_Separation) == 1))
+            if ((Non_Crossing_Biased_Climb(Climb_Inhibit, Alt_Layer_Value, Other_Tracked_Alt, Own_Tracked_Alt, Two_of_Three_Reports_Valid, need_upward_RA, need_downward_RA, Other_RAC, High_Confidence, Own_Tracked_Alt_Rate, Cur_Vertical_Sep, Other_Capability, Down_Separation, Up_Separation) == 1 && Own_Below_Threat(Climb_Inhibit, Alt_Layer_Value, Other_Tracked_Alt, Own_Tracked_Alt, Two_of_Three_Reports_Valid, need_upward_RA, need_downward_RA, Other_RAC, High_Confidence, Own_Tracked_Alt_Rate, Cur_Vertical_Sep, Other_Capability, Down_Separation, Up_Separation) == 1)) {
                 need_upward_RA = 1;
-            else
+            } else {
                 need_upward_RA = 0;
-            if ((Non_Crossing_Biased_Descend(Climb_Inhibit, Alt_Layer_Value, Other_Tracked_Alt, Own_Tracked_Alt, Two_of_Three_Reports_Valid, need_upward_RA, need_downward_RA, Other_RAC, High_Confidence, Own_Tracked_Alt_Rate, Cur_Vertical_Sep, Other_Capability, Down_Separation, Up_Separation) == 1 && Own_Above_Threat(Climb_Inhibit, Alt_Layer_Value, Other_Tracked_Alt, Own_Tracked_Alt, Two_of_Three_Reports_Valid, need_upward_RA, need_downward_RA, Other_RAC, High_Confidence, Own_Tracked_Alt_Rate, Cur_Vertical_Sep, Other_Capability, Down_Separation, Up_Separation) == 1))
+            }
+            if ((Non_Crossing_Biased_Descend(Climb_Inhibit, Alt_Layer_Value, Other_Tracked_Alt, Own_Tracked_Alt, Two_of_Three_Reports_Valid, need_upward_RA, need_downward_RA, Other_RAC, High_Confidence, Own_Tracked_Alt_Rate, Cur_Vertical_Sep, Other_Capability, Down_Separation, Up_Separation) == 1 && Own_Above_Threat(Climb_Inhibit, Alt_Layer_Value, Other_Tracked_Alt, Own_Tracked_Alt, Two_of_Three_Reports_Valid, need_upward_RA, need_downward_RA, Other_RAC, High_Confidence, Own_Tracked_Alt_Rate, Cur_Vertical_Sep, Other_Capability, Down_Separation, Up_Separation) == 1)) {
                 need_downward_RA = 1;
-            else
+            } else {
                 need_downward_RA = 0;
-            if (need_upward_RA == 1 && need_downward_RA == 1)
+            }
+            if (need_upward_RA == 1 && need_downward_RA == 1) {
                 alt_sep = UNRESOLVED;
-            else if (need_upward_RA == 1)
+            } else if (need_upward_RA == 1) {
                 alt_sep = UPWARD_RA;
-            else if (need_downward_RA != 1)//change
+            } else if (need_downward_RA != 1) {//change
                 alt_sep = DOWNWARD_RA;
-            else
+            } else {
                 alt_sep = UNRESOLVED;
+            }
         }
         return alt_sep;
     }

@@ -21,8 +21,9 @@ public class newV {
         double xt = 0;
         double yt = 0;
         boolean condition = x < 0.0 || y == 0.0; //change
-        if (condition || (x + Math.abs(y)) < TINY || (x + Math.abs(y)) > BIG)//change
+        if (condition || (x + Math.abs(y)) < TINY || (x + Math.abs(y)) > BIG) {//change
             return -10000;
+        }
         if (y > 0.0) {
             xt += x;
             yt += y;

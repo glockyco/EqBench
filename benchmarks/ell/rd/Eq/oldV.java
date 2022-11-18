@@ -30,8 +30,9 @@ public class oldV {
         double xt = 0;
         double yt = 0;
         double zt = 0;
-        if (MIN(x, y) < 0.0 || MIN(x + y, z) < TINY || MAX(MAX(x, y), z) > BIG)
+        if (MIN(x, y) < 0.0 || MIN(x + y, z) < TINY || MAX(MAX(x, y), z) > BIG) {
             return -1000;
+        }
         xt = x;
         yt = y;
         zt = z;

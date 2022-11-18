@@ -16,12 +16,13 @@ public class newV {
         am = 306.0253 + 385.816918 * c + 0.010730 * t2;
         jd = 2415020 + 28 * n + 7 * nph;
         xtra = 0.75933 + 1.53058868 * c + ((1.178e-4) - (1.55e-7) * t) * t2;
-        if (nph == 0)//change
+        if (nph == 0) {//change
             xtra += (0.1734 - 3.93e-4 * t) * Math.sin(RAD * as) - 0.4068 * Math.sin(RAD * am);
-        else if (nph == 1 || nph == 3)
+        } else if (nph == 1 || nph == 3) {
             xtra += (0.1721 - 4.0e-4 * t) * Math.sin(RAD * as) - 0.6280 * Math.sin(RAD * am);
-        else
+        } else {
             xtra = 0.0;
+        }
         i = (int) (xtra >= 0.0 ? Math.floor(xtra) : Math.ceil(xtra - 1.0));
         jd += i;
         frac = xtra - i;

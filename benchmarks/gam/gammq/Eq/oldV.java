@@ -2,8 +2,9 @@ package benchmarks.gam.gammq.Eq;
 
 public class oldV {
     public static double snippet(double a, double x, double gamser, double gammcf, double gln) {
-        if (x < 0.0 || a <= 0.0)
+        if (x < 0.0 || a <= 0.0) {
             return -100000;
+        }
         if (x < a + 1.0) {
             gamser = gser(a, x, gln, gamser);
             return 1.0 - gamser;
@@ -21,7 +22,9 @@ public class oldV {
 
         gln = gammln(a);
         if (x <= 0.0) {
-            if (x < 0.0) System.out.println("x less than 0 in routine gser");
+            if (x < 0.0) {
+                System.out.println("x less than 0 in routine gser");
+            }
             gamser = 0.0;
             return gamser;
         } else {
@@ -56,15 +59,23 @@ public class oldV {
             an = -i * (i - a);
             b += 2.0;
             d = an * d + b;
-            if (Math.abs(d) < FPMIN) d = FPMIN;
+            if (Math.abs(d) < FPMIN) {
+                d = FPMIN;
+            }
             c = b + an / c;
-            if (Math.abs(c) < FPMIN) c = FPMIN;
+            if (Math.abs(c) < FPMIN) {
+                c = FPMIN;
+            }
             d = 1.0 / d;
             del = d * c;
             h *= del;
-            if (Math.abs(del - 1.0) <= EPS) break;
+            if (Math.abs(del - 1.0) <= EPS) {
+                break;
+            }
         }
-        if (i > ITMAX) System.out.println("a too large, ITMAX too small in gcf");
+        if (i > ITMAX) {
+            System.out.println("a too large, ITMAX too small in gcf");
+        }
         return Math.exp(-x + a * Math.log(x) - gln) * h;
     }
 
@@ -79,7 +90,9 @@ public class oldV {
         tmp = x + 5.5;
         tmp -= (x + 0.5) * Math.log(tmp);
         ser = 1.000000000190015;
-        for (j = 0; j < 6; j++) ser += cof[j] / ++y;
+        for (j = 0; j < 6; j++) {
+            ser += cof[j] / ++y;
+        }
         return -tmp + Math.log(2.5066282746310005 * ser / x);
     }
 }

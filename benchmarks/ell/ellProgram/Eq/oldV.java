@@ -62,8 +62,9 @@ public class oldV {
         double zt = 0;
         double e2 = 0;
         double e3 = 0;
-        if (MIN(MIN(x, y), z) < 0.0 || MIN(MIN(x + y, x + z), y + z) < TINY || MAX(MAX(x, y), z) > BIG)
+        if (MIN(MIN(x, y), z) < 0.0 || MIN(MIN(x + y, x + z), y + z) < TINY || MAX(MAX(x, y), z) > BIG) {
             return -10000;
+        }
         xt = x;
         yt = y;
         zt = z;
@@ -114,8 +115,9 @@ public class oldV {
         double xt = 0;
         double yt = 0;
         double zt = 0;
-        if (MIN(x, y) < 0.0 || MIN(x + y, z) < TINY || MAX(MAX(x, y), z) > BIG)
+        if (MIN(x, y) < 0.0 || MIN(x + y, z) < TINY || MAX(MAX(x, y), z) > BIG) {
             return -1000;
+        }
         xt = x;
         yt = y;
         zt = z;
@@ -184,8 +186,9 @@ public class oldV {
         double xt = 0;
         double yt = 0;
         double zt = 0;
-        if (MIN(MIN(x, y), z) < 0.0 || MIN(MIN(x + y, x + z), MIN(y + z, Math.abs(p))) < TINY || MAX(MAX(x, y), MAX(z, Math.abs(p))) > BIG)
+        if (MIN(MIN(x, y), z) < 0.0 || MIN(MIN(x + y, x + z), MIN(y + z, Math.abs(p))) < TINY || MAX(MAX(x, y), MAX(z, Math.abs(p))) > BIG) {
             return -1000;
+        }
         sum = 0.0;
         fac = 1.0;
         if (p > 0.0) {
@@ -254,8 +257,9 @@ public class oldV {
         double w = 0;
         double xt = 0;
         double yt = 0;
-        if (x < 0.0 || y == 0.0 || (x + Math.abs(y)) < TINY || (x + Math.abs(y)) > BIG)
+        if (x < 0.0 || y == 0.0 || (x + Math.abs(y)) < TINY || (x + Math.abs(y)) > BIG) {
             return -10000;
+        }
         if (y > 0.0) {
             xt += x;
             yt += y;

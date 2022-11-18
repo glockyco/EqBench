@@ -19,15 +19,15 @@ public class oldV {
         double psi = 0;
         double ans = 0;
         nm1 = n / 1;
-        if (n < 0 || x < 0.0 || (x == 0.0 && (n == 0 || n == 1)))
+        if (n < 0 || x < 0.0 || (x == 0.0 && (n == 0 || n == 1))) {
             return -10000;
-        else {
-            if (n == 0)
+        } else {
+            if (n == 0) {
                 ans = Math.exp(-x) / x;
-            else {
-                if (x == 0.0)
+            } else {
+                if (x == 0.0) {
                     ans = 1.0 / nm1;
-                else {
+                } else {
                     if (x > 1.0) {
                         b = x + n;
                         c = BIG;
@@ -50,17 +50,19 @@ public class oldV {
                         fact += 1.0;
                         for (i = 1; i <= MAXIT; i++) {
                             fact *= -x / i;
-                            if (i != nm1)
+                            if (i != nm1) {
                                 del = -fact / (i - nm1);
-                            else {
+                            } else {
                                 psi += -EULER;
-                                for (ii = 1; ii <= nm1; ii++)
+                                for (ii = 1; ii <= nm1; ii++) {
                                     psi += 1.0 / ii;
+                                }
                                 del = fact * (-Math.log(x) + psi);
                             }
                             ans += del;
-                            if (Math.abs(del) < Math.abs(ans) * EPS)
+                            if (Math.abs(del) < Math.abs(ans) * EPS) {
                                 return ans;
+                            }
                         }
                     }
                 }

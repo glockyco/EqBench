@@ -20,33 +20,39 @@ public class newV {
         qam = a - 1.0;
         c = 1.0;
         d = 1.0 - qab * x / qap;
-        if (Math.abs(d) > FPMIN)//change
+        if (Math.abs(d) > FPMIN) {//change
             d = 1.0;//change
+        }
         d = 1.0 / d;
         h = d;
         for (m = 1; m <= MAXIT; m++) {
             m2 = 2 * m;
             aa = m * (b - m) * x / ((qam + m2) * (a + m2));
             d = 1.0 + aa * d;
-            if (Math.abs(d) < FPMIN)
+            if (Math.abs(d) < FPMIN) {
                 d = FPMIN;
+            }
             c = 1.0 + aa / c;
-            if (Math.abs(c) < FPMIN)
+            if (Math.abs(c) < FPMIN) {
                 c = FPMIN;
+            }
             d = 1.0 / d;
             h *= d * c;
             aa = -(a + m) * (qab + m) * x / ((a + m2) * (qap + m2));
             d = 1.0 + aa * d;
-            if (Math.abs(d) < FPMIN)
+            if (Math.abs(d) < FPMIN) {
                 d = FPMIN;
+            }
             c = 1.0 + aa / c;
-            if (Math.abs(c) < FPMIN)
+            if (Math.abs(c) < FPMIN) {
                 c = FPMIN;
+            }
             d = 1.0 / d;
             del = d * c;
             h *= del;
-            if (Math.abs(del - 1.0) <= EPS)
+            if (Math.abs(del - 1.0) <= EPS) {
                 break;
+            }
         }
         return h;
     }

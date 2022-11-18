@@ -7,8 +7,9 @@ public class oldV {
         double bkm = 0;
         double bkp = 0;
         double tox = 0;
-        if (n < 2)
+        if (n < 2) {
             return -1000;
+        }
         tox = 2.0 * x;
         bkm = bessk0(tox);
         bk = bessk1(tox);
@@ -77,9 +78,10 @@ public class oldV {
             ans = 0.39894228 + y * (-0.3988024e-1 + y * (-0.362018e-2 + y * (0.163801e-2 + y * (-0.1031555e-1 + y * ans))));
             ans *= (Math.exp(ax) / Math.sqrt(ax));
         }
-        if (x < 0.0)
+        if (x < 0.0) {
             return -ans;
-        else
+        } else {
             return ans;
+        }
     }
 }

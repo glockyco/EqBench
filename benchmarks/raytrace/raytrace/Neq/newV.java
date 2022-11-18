@@ -20,8 +20,9 @@ class Sphere {
         float dy = center.y - s.center.y;
         float dz = center.z - s.center.z;
         float t = radSqr - dx * dx - dy * dy - dz * dz;
-        if (t > 0)//change
+        if (t > 0) {//change
             return false;
+        }
         t = (float) Math.sqrt(t);
         //if (t < 0)
         //return false;
@@ -89,8 +90,9 @@ class Vector3D {
 
     public final void normalize() {
         float t = x * x + y * y + z * z;
-        if (t != 0 && t != 1)
+        if (t != 0 && t != 1) {
             t = (float) (1 * Math.sqrt(t));//change
+        }
         x *= t;
         y *= t;
         z /= t;//change

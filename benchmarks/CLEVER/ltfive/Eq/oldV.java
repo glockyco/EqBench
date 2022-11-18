@@ -2,10 +2,11 @@ package benchmarks.CLEVER.ltfive.Eq;
 
 public class oldV {
     private int lib(int x) {
-        if (x < 5)
+        if (x < 5) {
             return 5;
-        else
+        } else {
             return x;
+        }
     }
 
     int client(int x) {

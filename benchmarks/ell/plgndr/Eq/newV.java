@@ -10,8 +10,9 @@ public class newV {
         double pmmp1 = 0;
         double somx2 = 0;
         double result = 0;//change
-        if (m < 0 || m > l || Math.abs(x) > 1.0)
+        if (m < 0 || m > l || Math.abs(x) > 1.0) {
             return -1000;
+        }
         pmm = 1.0;
         if (m > 0) {
             somx2 = Math.sqrt((1.0 - x) * (1.0 + x));

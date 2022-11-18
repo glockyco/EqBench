@@ -9,10 +9,11 @@ public class oldV {
         if (absa > absb) {
             return absa * Math.sqrt(1.0 + SQR(absb / absa));
         } else {
-            if (absb == 0.0)
+            if (absb == 0.0) {
                 return 0.0;
-            else
+            } else {
                 return absb * Math.sqrt(1.0 + SQR(absa / absb));
+            }
         }
     }
 

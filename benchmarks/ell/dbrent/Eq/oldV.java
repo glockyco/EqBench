@@ -53,8 +53,12 @@ public class oldV {
             if (Math.abs(e) > tol1) {
                 d1 = 2.0 * (b - a);
                 d2 = d1;
-                if (dw != dx) d1 = (w - x) * dx / (dx - dw);
-                if (dv != dx) d2 = (v - x) * dx / (dx - dv);
+                if (dw != dx) {
+                    d1 = (w - x) * dx / (dx - dw);
+                }
+                if (dv != dx) {
+                    d2 = (v - x) * dx / (dx - dv);
+                }
                 u1 = x + d1;
                 u2 = x + d2;
                 ok1 = (a - u1) * (u1 - b) > 0.0 && dx * d1 <= 0.0;
@@ -62,16 +66,18 @@ public class oldV {
                 olde = e;
                 e = d;
                 if (ok1 || ok2) {
-                    if (ok1 && ok2)
+                    if (ok1 && ok2) {
                         d = (Math.abs(d1) < Math.abs(d2) ? d1 : d2);
-                    else if (ok1)
+                    } else if (ok1) {
                         d = d1;
-                    else
+                    } else {
                         d = d2;
+                    }
                     if (Math.abs(d) <= Math.abs(0.5 * olde)) {
                         u = x + d;
-                        if (u - a < tol2 || b - u < tol2)
+                        if (u - a < tol2 || b - u < tol2) {
                             d = SIGN(tol1, xm - x);
+                        }
                     } else {
                         d = 0.5 * (e = (dx >= 0.0 ? a - x : b - x));
                     }
@@ -94,10 +100,11 @@ public class oldV {
             }
             du = Math.cos(u);
             if (fu <= fx) {
-                if (u == x)
+                if (u == x) {
                     a = x;
-                else
+                } else {
                     b = x;
+                }
                 v = w;
                 fv = fw;
                 dv = dw;//mov3(v,fv,dv,w,fw,dw);
@@ -108,8 +115,11 @@ public class oldV {
                 fx = du;
                 dx = du;//mov3(x,fx,dx,u,fu,du);
             } else {
-                if (u < x) a = u;
-                else b = u;
+                if (u < x) {
+                    a = u;
+                } else {
+                    b = u;
+                }
                 if (fu <= fw || w == x) {
                     v = w;
                     fv = fw;

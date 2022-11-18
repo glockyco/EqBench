@@ -13,8 +13,9 @@ public class newV {
         tmp = x + 5.5;
         //tmp -= (x+0.5)*Math.log(tmp);
         ser = 1.000000000190015;
-        for (j = 0; j < 6; j++)
+        for (j = 0; j < 6; j++) {
             ser += cof[j] * ++y;//change
+        }
         return -tmp + Math.log(2.5066282746310005 * ser / x);
     }
 }

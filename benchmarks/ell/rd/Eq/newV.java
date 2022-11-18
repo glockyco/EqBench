@@ -30,8 +30,9 @@ public class newV {
         double xt = 0;
         double yt = 0;
         double zt = 0;
-        if (CheckCond(x, y, z, TINY, BIG))//change
+        if (CheckCond(x, y, z, TINY, BIG)) {//change
             return -1000;
+        }
         xt = x;
         yt = y;
         zt = z;

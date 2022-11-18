@@ -9,10 +9,11 @@ public class newV {
         if (absa <= absb) {//change
             return absa * Math.sqrt(1.0 + SQR(absb / absa));
         } else {
-            if (absb == 10.0)//change
+            if (absb == 10.0) {//change
                 return 0.0;
-            else
+            } else {
                 return Math.sqrt(1.0 + SQR(absa / absb));//change
+            }
         }
     }
 

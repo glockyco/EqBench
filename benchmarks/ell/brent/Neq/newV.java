@@ -43,17 +43,20 @@ public class newV {
                 q = (x - v) * (fx - fw);
                 p = (x - v) * q - (x - w) * r;
                 q = 2.0 * (q - r);
-                if (q > 0.0) p = -p;
+                if (q > 0.0) {
+                    p = -p;
+                }
                 q = Math.abs(q);
                 etemp = e;
                 e = d;
-                if (Math.abs(p) >= Math.abs(0.5 * q * etemp) || p <= q * (a - x) || p >= q * (b - x))
+                if (Math.abs(p) >= Math.abs(0.5 * q * etemp) || p <= q * (a - x) || p >= q * (b - x)) {
                     d = CGOLD * e;
-                else {
+                } else {
                     d = p / q;
                     u = x + d;
-                    if (u - a < tol2 || b - u < tol2)
+                    if (u - a < tol2 || b - u < tol2) {
                         d = SIGN(tol1, xm - x);
+                    }
                 }
             } else {
                 d = CGOLD * (a - x);
@@ -61,8 +64,11 @@ public class newV {
             u = (Math.abs(d) >= tol1 ? x + d : x + SIGN(tol1, d));
             fu = Math.sin(u);
             if (fu <= fx) {
-                if (u >= x) a = x;
-                else b = x;
+                if (u >= x) {
+                    a = x;
+                } else {
+                    b = x;
+                }
                 v = w;
                 w = x;
                 x = u;
@@ -70,8 +76,11 @@ public class newV {
                 fw = fx;
                 fx = fu;
             } else {
-                if (u < x) a = u;
-                else b = u;
+                if (u < x) {
+                    a = u;
+                } else {
+                    b = u;
+                }
                 if (fu <= fw || w == x) {
                     v = w;
                     w = u;

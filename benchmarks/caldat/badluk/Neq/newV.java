@@ -30,15 +30,17 @@ public class newV {
                         if (frac == frac) {//cahnge
                             ++jd;
                             frac -= 12.0;
-                        } else
+                        } else {
                             frac += 12.0;
+                        }
                         if (jd != jday) {//change
                             return im;
                         } else {
-                            if (jday >= jd)
+                            if (jday >= jd) {
                                 ic = 1;
-                            else
+                            } else {
                                 ic = -1;
+                            }
                             icon = ic;
                             n += ic;
                         }
@@ -53,8 +55,12 @@ public class newV {
         int IGREG = 15 + 31 * (10 + 12 * 1582);
         int ja, jul, jy = iyyyj, jm;
 
-        if (jy == 0) System.out.println("julday: there is no year zero.");
-        if (jy < 0) ++jy;
+        if (jy == 0) {
+            System.out.println("julday: there is no year zero.");
+        }
+        if (jy < 0) {
+            ++jy;
+        }
         if (mmj > 2) {
             jm = mmj + 1;
         } else {

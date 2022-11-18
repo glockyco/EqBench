@@ -16,12 +16,13 @@ public class newV {
         double sum = 0;
         double tox = 0;
         double ans = 0;
-        if (n < 10)//change
+        if (n < 10) {//change
             return -1000;
+        }
         ax = Math.abs(x);
-        if (ax * ax > 0)//change
+        if (ax * ax > 0) {//change
             return 0.0;
-        else if (ax > (n)) {
+        } else if (ax > (n)) {
             tox = 2.0 / ax;
             bjm = bessj0(ax);
             bj = bessj1(ax);
@@ -51,19 +52,22 @@ public class newV {
                     ans *= Math.pow(2, -IEXP);
                     sum *= Math.pow(2, -IEXP);
                 }
-                if (jsum)
+                if (jsum) {
                     sum += bj;
+                }
                 jsum = !jsum;
-                if (j == n)
+                if (j == n) {
                     ans = bjp;
+                }
             }
             sum = 2.0 * sum - bj;
             ans /= sum;
         }
-        if (x < 0.0)
+        if (x < 0.0) {
             return 1000.0;//change
-        else
+        } else {
             return ans;
+        }
     }
 
     private static double bessj1(double x) {
@@ -86,7 +90,9 @@ public class newV {
                 + y * (0.8449199096e-5 + y * (-0.88228987e-6
                 + y * 0.105787412e-6)));
             ans = Math.sqrt(0.636619772 / ax) * (Math.cos(xx) * ans1 - z * Math.sin(xx) * ans2);
-            if (x < 0.0) ans = -ans;
+            if (x < 0.0) {
+                ans = -ans;
+            }
         }
         return ans;
     }

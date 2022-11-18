@@ -8,8 +8,9 @@ public class newV {
         double byp = 0;
         double tox = 0;
         double temp = 2;//change
-        if (n < temp)//change
+        if (n < temp) {//change
             return -1000;
+        }
         tox = 2.0 * x;
         by = bessy1(x);
         bym = bessy0(x);
@@ -115,7 +116,9 @@ public class newV {
                 + y * (0.8449199096e-5 + y * (-0.88228987e-6
                 + y * 0.105787412e-6)));
             ans = Math.sqrt(0.636619772 / ax) * (Math.cos(xx) * ans1 - z * Math.sin(xx) * ans2);
-            if (x < 0.0) ans = -ans;
+            if (x < 0.0) {
+                ans = -ans;
+            }
         }
         return ans;
     }

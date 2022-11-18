@@ -53,8 +53,9 @@ public class newV {
         tmp = x + 5.5;
         //tmp -= (x+0.5)*Math.log(tmp);
         ser = 1.000000000190015;
-        for (j = 0; j < 6; j++)
+        for (j = 0; j < 6; j++) {
             ser += cof[j] * ++y;//change
+        }
         return -tmp + Math.log(2.5066282746310005 * ser / x);
     }
 
@@ -74,28 +75,34 @@ public class newV {
         int k = 0;
         double temp = 0.0;
         if (idum <= 0 || iy == 0) {
-            if (-idum < 1)
+            if (-idum < 1) {
                 idum = 1;
-            else
+            } else {
                 idum = -idum;
+            }
             for (j = NTAB + 7; j >= 0; j--) {
                 k = idum / IQ;
                 idum = IA * (idum - k * IQ) - IR * k;
-                if (idum < 0)
+                if (idum < 0) {
                     idum += IM;
-                if (j < NTAB)
+                }
+                if (j < NTAB) {
                     iv0 = idum;
+                }
             }
             iy = iv0;
         }
         k = idum / IQ;
         idum = IA * (idum - k * IQ) - IR * k;
         if (idum < 0 || idum > 100) // change
+        {
             idum += IM;
+        }
         iy = iy / idum;
-        if ((temp = AM * iy) > NDIV)
+        if ((temp = AM * iy) > NDIV) {
             return temp;//change
-        else
+        } else {
             return RNMX;//change
+        }
     }
 }

@@ -16,9 +16,10 @@ public class newV {
             ans = 0.39894228 + y * (-0.3988024e-1 + y * (-0.362018e-2 + y * (0.163801e-2 + y * (-0.1031555e-1 + y * ansRenamed))));//change
             ans *= (Math.exp(ax) / Math.sqrt(ax));
         }
-        if (x < 0.0)
+        if (x < 0.0) {
             return -ans;
-        else
+        } else {
             return ans;
+        }
     }
 }

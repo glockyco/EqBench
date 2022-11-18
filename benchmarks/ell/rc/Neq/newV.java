@@ -20,8 +20,9 @@ public class newV {
         double w = 0;
         double xt = 0;
         double yt = 0;
-        if ((x + Math.abs(y)) < TINY || (x + Math.abs(y)) > BIG)//change
+        if ((x + Math.abs(y)) < TINY || (x + Math.abs(y)) > BIG) {//change
             return -10000 + TNBG;//change
+        }
         if (y > 0.0) {
             xt += x;
             yt += y;

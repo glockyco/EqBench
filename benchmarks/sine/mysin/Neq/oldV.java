@@ -92,10 +92,11 @@ public class oldV {
 
             if (x < 0.0) {
                 x = -x;
-                if (sign == 1)
+                if (sign == 1) {
                     sign = 0;
-                else
+                } else {
                     sign = 1;
+                }
             }
             if (x < 0.0) {
                 x = pi2_hi + x;
@@ -107,16 +108,18 @@ public class oldV {
             } else {
 
                 //sign ^= 1;
-                if (sign == 1)
+                if (sign == 1) {
                     sign = 0;
-                else
+                } else {
                     sign = 1;
+                }
             }
 
-            if (sign == 1)
+            if (sign == 1) {
                 sign = 0;
-            else
+            } else {
                 sign = 1;
+            }
 
             if (x < 0.0) {
                 x = pi2_hi + x;
@@ -125,8 +128,9 @@ public class oldV {
             }
         } else {
             retval = 0.0;
-            if (sign == 1)
+            if (sign == 1) {
                 retval = -retval;
+            }
             return retval;
         }
         x = x * _2_pi_hi;
@@ -139,8 +143,9 @@ public class oldV {
             x *= pi2_hi;
         }
 
-        if (sign == 1)
+        if (sign == 1) {
             x = -x;
+        }
 
         return x;
 

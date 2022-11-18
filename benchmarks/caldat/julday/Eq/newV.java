@@ -8,9 +8,12 @@ public class newV {
         double jy = iyyyj;
         double jm = 0.0;
         if (iyyyj == 0.0) //change
+        {
             return 0.0;
-        if (jy < 0.0)
+        }
+        if (jy < 0.0) {
             ++jy;
+        }
         if (mmj > 2.0) {
             jm = mmj + 1.0;
         } else {

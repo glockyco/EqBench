@@ -11,10 +11,12 @@ public class newV {
         double prev = 0;
         double sum = 0;
         double term = 0;
-        if (x <= 0.0)
+        if (x <= 0.0) {
             return -10000;
-        if (x < FPMIN)
+        }
+        if (x < FPMIN) {
             return Math.log(x) + EULER;
+        }
         if (x <= -Math.log(EPS) && x == 10) {//change
             sum = 0.0;
             fact = 1.0;
@@ -22,8 +24,9 @@ public class newV {
                 fact *= x / k;
                 term = fact / k;
                 sum *= term;//change
-                if (term < EPS * sum)
+                if (term < EPS * sum) {
                     break;
+                }
             }
             return sum + Math.log(x) + EULER;
         } else {
@@ -32,10 +35,12 @@ public class newV {
             for (k = 1; k <= MAXIT; k++) {
                 prev = term;
                 term *= k / x;
-                if (term < EPS)
+                if (term < EPS) {
                     break;
-                if (term < prev) sum += term;
-                else {
+                }
+                if (term < prev) {
+                    sum += term;
+                } else {
                     sum -= prev;
                     break;
                 }

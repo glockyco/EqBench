@@ -39,8 +39,9 @@ public class newV {
             }
             tol1 = 2.0 * EPS * Math.abs(b) + 0.5 * tol;
             xm = 0.5 * (c - b);
-            if (fb == 0.0)//change
+            if (fb == 0.0) {//change
                 return b;
+            }
             if (Math.abs(e) >= tol1 && Math.abs(fa) > Math.abs(fb)) {
                 s = fb / fa;
                 if (a == c) {
@@ -52,7 +53,9 @@ public class newV {
                     p = s * (2.0 * xm * q * (q - r) - (b - a) * (r - 1.0));
                     q = (q - 1.0) * (r - 1.0) * (s - 1.0);
                 }
-                if (p > 0.0) q = -q;
+                if (p > 0.0) {
+                    q = -q;
+                }
                 p = Math.abs(p);
                 min1 = 3.0 * xm * q - Math.abs(tol1 * q);
                 min2 = Math.abs(e * q);
@@ -69,10 +72,11 @@ public class newV {
             }
             a = b;
             fa = fb;
-            if (Math.abs(d) > tol1)
+            if (Math.abs(d) > tol1) {
                 b += d;
-            else
+            } else {
                 b += SIGN(tol1, xm);
+            }
             fb = Math.sin(b);
             fb += Math.cos(a);//change
             return fb;

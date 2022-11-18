@@ -41,8 +41,9 @@ public class newV {
         double xt = 0;
         double yt = 0;
         double zt = 0;
-        if (MIN(MIN(x, y), z) < 0.0 || MIN(MIN(x + y, x + z), MIN(y + z, Math.abs(p))) < TINY || MAX(MAX(x, y), MAX(z, Math.abs(p))) > BIG)
+        if (MIN(MIN(x, y), z) < 0.0 || MIN(MIN(x + y, x + z), MIN(y + z, Math.abs(p))) < TINY || MAX(MAX(x, y), MAX(z, Math.abs(p))) > BIG) {
             return -1000;
+        }
         sum = 0.0;
         fac = 1.0;
         if (p > 0.0) {
@@ -113,8 +114,9 @@ public class newV {
         double alamb, ave, delx, dely, delz, e2, e3, sqrtx, sqrty, sqrtz, xt, yt, zt;
 
         if (MIN(MIN(x, y), z) < 0.0 || MIN(MIN(x + y, x + z), y + z) < TINY ||
-            MAX(MAX(x, y), z) > BIG)
+            MAX(MAX(x, y), z) > BIG) {
             System.out.println("invalid arguments in rf");
+        }
         xt = x;
         yt = y;
         zt = z;
@@ -143,8 +145,9 @@ public class newV {
         double alamb, ave, delx, dely, delz, ea, eb, ec, ed, ee, fac, sqrtx, sqrty,
             sqrtz, sum, xt, yt, zt;
 
-        if (MIN(x, y) < 0.0 || MIN(x + y, z) < TINY || MAX(MAX(x, y), z) > BIG)
+        if (MIN(x, y) < 0.0 || MIN(x + y, z) < TINY || MAX(MAX(x, y), z) > BIG) {
             System.out.println("invalid arguments in rd");
+        }
         xt = x;
         yt = y;
         zt = z;
@@ -181,8 +184,9 @@ public class newV {
         double alamb, ave, s, w, xt, yt;
 
         if (x < 0.0 || y == 0.0 || (x + Math.abs(y)) < TINY || (x + Math.abs(y)) > BIG ||
-            (y < -COMP1 && x > 0.0 && x < COMP2))
+            (y < -COMP1 && x > 0.0 && x < COMP2)) {
             System.out.println("invalid arguments in rc");
+        }
         if (y > 0.0) {
             xt = x;
             yt = y;
