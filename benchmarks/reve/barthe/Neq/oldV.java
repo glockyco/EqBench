@@ -1,4 +1,4 @@
-package benchmarks.reve.barthe.Eq;
+package benchmarks.reve.barthe.Neq;
 
 public class oldV {
     int f(int n, int c) {
