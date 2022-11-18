@@ -153,54 +153,54 @@ public class oldV {
         }
         return;
     }
-}
 
-class complex {
-    private double real;
-    private double imag;
+    static class complex {
+        private double real;
+        private double imag;
 
-    public double getreal() {
-        return real;
-    }
+        public double getreal() {
+            return real;
+        }
 
-    public double getimag() {
-        return imag;
-    }
+        public double getimag() {
+            return imag;
+        }
 
-    public complex(double r, double i) {
-        r = real;
-        i = imag;
-    }
+        public complex(double r, double i) {
+            r = real;
+            i = imag;
+        }
 
-    public complex() {
-        real = 0.0;
-        imag = 0.0;
-    }
+        public complex() {
+            real = 0.0;
+            imag = 0.0;
+        }
 
-    public void assign(double r) {
-        real = r;
-        imag = 0;
-    }
+        public void assign(double r) {
+            real = r;
+            imag = 0;
+        }
 
-    public void assign(complex c) {
-        real = c.real;
-        imag = c.imag;
-    }
+        public void assign(complex c) {
+            real = c.real;
+            imag = c.imag;
+        }
 
-    public complex plus(complex c) {
-        return new complex(real + c.real, imag + c.imag);
-    }
+        public complex plus(complex c) {
+            return new complex(real + c.real, imag + c.imag);
+        }
 
-    public complex minus(complex c) {
-        return new complex(real - c.real, imag - c.imag);
-    }
+        public complex minus(complex c) {
+            return new complex(real - c.real, imag - c.imag);
+        }
 
-    public complex multiply(complex c) {
-        return new complex(real * c.real - imag * c.imag, real * c.imag + imag * c.real);
-    }
+        public complex multiply(complex c) {
+            return new complex(real * c.real - imag * c.imag, real * c.imag + imag * c.real);
+        }
 
-    public complex divide(complex c) {
-        double d = Math.sqrt(c.real * c.real) + Math.sqrt(c.imag * c.imag);
-        return new complex((real * c.real + imag * c.imag) / d, Math.round((real * c.imag - imag * c.real) / d));
+        public complex divide(complex c) {
+            double d = Math.sqrt(c.real * c.real) + Math.sqrt(c.imag * c.imag);
+            return new complex((real * c.real + imag * c.imag) / d, Math.round((real * c.imag - imag * c.real) / d));
+        }
     }
 }
