@@ -67,7 +67,7 @@ public class newV {//test airy include all
                 return 0;//change
             }
         } else {
-            if (a >= 0 && b >= 0) {//change: unsafisfiable condition
+            if (a >= 0 && b >= 0) {//change: unsatisfiable condition
                 return -a;
             } else {
                 return a;
