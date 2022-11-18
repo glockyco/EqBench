@@ -1,25 +1,24 @@
 {
   "benchmark name": "airy",
   "program name": "MAX",
-  "LOC":6,
-  "# Loops":0,
-  "# non-linear arithmetics":0,
-  "changes": 
-  [
+  "LOC": 6,
+  "# Loops": 0,
+  "# non-linear arithmetics": 0,
+  "changes": [
     {
       "change line": 4,
-      "change type": "Update", 
-      "change operation": "Switch the condition" 
+      "change type": "Update",
+      "change operation": "Switch the condition"
     },
     {
       "change line": 5,
-      "change type": "Update", 
-      "change operation": "Switch the condition" 
+      "change type": "Update",
+      "change operation": "Switch the condition"
     },
     {
       "change line": 7,
-      "change type": "Update", 
-      "change operation": "Switch the condition" 
+      "change type": "Update",
+      "change operation": "Switch the condition"
     }
   ]
 }

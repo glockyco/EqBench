@@ -1,15 +1,14 @@
 {
   "benchmark name": "airy",
   "program name": "beschb",
-  "LOC":9,
-  "# Loops":0,
-  "# non-linear arithmetics":4,
-  "changes": 
-  [
+  "LOC": 9,
+  "# Loops": 0,
+  "# non-linear arithmetics": 4,
+  "changes": [
     {
       "change line": 30,
-      "change type": "Insertion", 
-      "change operation": "Dummy statement" 
+      "change type": "Insertion",
+      "change operation": "Dummy statement"
     }
   ]
 }

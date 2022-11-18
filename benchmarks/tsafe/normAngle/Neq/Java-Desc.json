@@ -1,11 +1,10 @@
 {
   "benchmark name": "tsafe",
   "program name": "normAngle",
-  "LOC":9,
-  "# Loops":0,
-  "# non-linear arithmetics":1,
-  "changes":  
-  [
+  "LOC": 9,
+  "# Loops": 0,
+  "# non-linear arithmetics": 1,
+  "changes": [
     {
       "change line": 6,
       "change type": "Update",
@@ -17,8 +16,9 @@
       "change operation": "Arithmetic"
     }
   ],
-  "counter-example":
-  [   
-      {"double angle":4.0}
+  "counter-example": [
+    {
+      "double angle": 4.0
+    }
   ]
 }

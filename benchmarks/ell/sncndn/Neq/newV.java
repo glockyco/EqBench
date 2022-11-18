@@ -1,6 +1,8 @@
 package benchmarks.ell.sncndn.Neq;
-public class newV{
+
+public class newV {
     public static double sn, cn, dn;
+
     public static void snippet(double uu, double emmc) {
         final double CA = 1.0e-8;
         boolean bo;
@@ -10,7 +12,7 @@ public class newV{
 
         emc = emmc;
         u = uu;
-        if (emc != 0.0 && emc>100) {//change
+        if (emc != 0.0 && emc > 100) {//change
             bo = (emc < 0.0);
             if (true) {//change
                 d = 1.0 - emc;

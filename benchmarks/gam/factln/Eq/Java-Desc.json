@@ -1,15 +1,14 @@
 {
   "benchmark name": "gam",
   "program name": "factln",
-  "LOC":9,
-  "# Loops":0,
-  "# non-linear arithmetics":0,
-  "changes": 
-  [
+  "LOC": 9,
+  "# Loops": 0,
+  "# non-linear arithmetics": 0,
+  "changes": [
     {
       "change line": "7-10",
-      "change type": "Update", 
-      "change operation": "Move the condition to nested condition" 
+      "change type": "Update",
+      "change operation": "Move the condition to nested condition"
     }
   ]
 }

@@ -1,20 +1,19 @@
 {
   "benchmark name": "ell",
   "program name": "elle",
-  "LOC":10,
-  "# Loops":0,
-  "# non-linear arithmetics":10,
-  "changes": 
-  [
+  "LOC": 10,
+  "# Loops": 0,
+  "# non-linear arithmetics": 10,
+  "changes": [
     {
       "change line": 5,
-      "change type": "Insert", 
-      "change operation": "Dummy statement" 
+      "change type": "Insert",
+      "change operation": "Dummy statement"
     },
     {
       "change line": 6,
-      "change type": "Update", 
-      "change operation": "Arithmetic" 
+      "change type": "Update",
+      "change operation": "Arithmetic"
     }
   ]
 }

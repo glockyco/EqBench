@@ -1,20 +1,19 @@
 {
   "benchmark name": "ran",
   "program name": "ranzero",
-  "LOC":17,
-  "# Loops":0,
-  "# non-linear arithmetics":8,
-  "changes": 
-  [
+  "LOC": 17,
+  "# Loops": 0,
+  "# non-linear arithmetics": 8,
+  "changes": [
     {
       "change line": 14,
-      "change type": "Update", 
-      "change operation": "Replace variable" 
+      "change type": "Update",
+      "change operation": "Replace variable"
     },
     {
       "change line": 18,
-      "change type": "Delete", 
-      "change operation": "Unused variable" 
+      "change type": "Delete",
+      "change operation": "Unused variable"
     }
   ]
 }

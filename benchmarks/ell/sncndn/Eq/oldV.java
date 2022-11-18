@@ -1,6 +1,8 @@
 package benchmarks.ell.sncndn.Eq;
-public class oldV{
+
+public class oldV {
     public static double sn, cn, dn;
+
     public static void snippet(double uu, double emmc) {
         final double CA = 1.0e-8;
         boolean bo;

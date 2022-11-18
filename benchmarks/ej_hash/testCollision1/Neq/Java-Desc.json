@@ -1,24 +1,34 @@
 {
   "benchmark name": "ej_hash",
   "program name": "testCollision1",
-  "LOC":7,
-  "# Loops":0,
-  "# non-linear arithmetics":0,
-  "changes": 
-  [
+  "LOC": 7,
+  "# Loops": 0,
+  "# non-linear arithmetics": 0,
+  "changes": [
     {
       "change line": 20,
-      "change type": "Update", 
-      "change operation": "Arithmetic" 
+      "change type": "Update",
+      "change operation": "Arithmetic"
     }
   ],
-  "counter-example":
-  [
-      {"int x1":20},
-      {"long y1":20},
-      {"int z1":40},
-      {"int x2":20},
-      {"long y2":20},
-      {"int z2":40}
+  "counter-example": [
+    {
+      "int x1": 20
+    },
+    {
+      "long y1": 20
+    },
+    {
+      "int z1": 40
+    },
+    {
+      "int x2": 20
+    },
+    {
+      "long y2": 20
+    },
+    {
+      "int z2": 40
+    }
   ]
 }

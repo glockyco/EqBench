@@ -1,24 +1,24 @@
 {
   "benchmark name": "ran",
   "program name": "gammln",
-  "LOC":15,
-  "# Loops":1,
-  "# non-linear arithmetics":6,
-  "changes": 
-  [
+  "LOC": 15,
+  "# Loops": 1,
+  "# non-linear arithmetics": 6,
+  "changes": [
     {
       "change line": 13,
-      "change type": "Delete", 
-      "change operation": "Arithmetic" 
+      "change type": "Delete",
+      "change operation": "Arithmetic"
     },
     {
       "change line": 16,
-      "change type": "Update", 
-      "change operation": "Arithmetic" 
+      "change type": "Update",
+      "change operation": "Arithmetic"
     }
   ],
-  "counter-example":
-  [
-      {"double xx":10.0}
+  "counter-example": [
+    {
+      "double xx": 10.0
+    }
   ]
 }

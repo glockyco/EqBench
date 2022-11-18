@@ -1,15 +1,14 @@
 {
   "benchmark name": "bess",
   "program name": "bessi1",
-  "LOC":20,
-  "# Loops":0,
-  "# non-linear arithmetics":23,
-  "changes": 
-  [
+  "LOC": 20,
+  "# Loops": 0,
+  "# non-linear arithmetics": 23,
+  "changes": [
     {
       "change line": "14-15",
-      "change type": "Update", 
-      "change operation": "Rename variable" 
+      "change type": "Update",
+      "change operation": "Rename variable"
     }
   ]
 }
