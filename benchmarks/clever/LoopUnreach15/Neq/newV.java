@@ -1,4 +1,4 @@
-package benchmarks.clever.LoopUnreach5.Neq;
+package benchmarks.clever.LoopUnreach15.Neq;
 
 public class newV {
     private int foo(int a, int b) {
