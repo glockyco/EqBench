@@ -33,7 +33,7 @@ public class oldV {//test airy include all
 
     }
 
-    private static double chebev_c1d(double a, double b, int m, double x) {
+    public static double chebev_c1d(double a, double b, int m, double x) {
         double d = 0.0;
         double dd = 0.0;
         double sv, y, y2;
