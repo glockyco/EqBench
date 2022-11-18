@@ -1,4 +1,4 @@
-package benchmarks.clever.is_prime1.Eq;
+package benchmarks.clever.is_prime1.Neq;
 
 public class oldV {
     int NUMPRIMES = 8;
