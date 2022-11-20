@@ -1,6 +1,10 @@
 package benchmarks.ell.elle.Eq;
 
 public class oldV {
+    public static double snippet(double phi, double ak) {
+        return elle(phi, ak);
+    }
+
     public static double elle(double phi, double ak) {
         double cc, q, s;
         s = Math.sin(phi);

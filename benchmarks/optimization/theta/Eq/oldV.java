@@ -1,6 +1,10 @@
 package benchmarks.optimization.theta.Eq;
 
 public class oldV {
+    public static double snippet(double x1, double x2) {
+        return theta(x1, x2);
+    }
+
     public final static double theta(double x1, double x2) {
         if (x1 > 0.0) {
             return Math.atan(x2 / x1) / (2 * Math.PI);

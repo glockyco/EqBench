@@ -5,6 +5,10 @@ public class oldV {
     private final long y;
     private final int z;
 
+    public static void snippet(int x1, long y1, int z1, int x2, long y2, int z2) {
+        testCollision1(x1, y1, z1, x2, y2, z2);
+    }
+
     public oldV(int x, long y, int z) {
         this.x = x;
         this.y = y;

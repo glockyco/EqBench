@@ -3,6 +3,10 @@ package benchmarks.caldat.caldat.Neq;
 public class newV {//test three,no connections
     public static int mm, id, iyyy;
 
+    public static void snippet(int julian) {
+        caldat(julian);
+    }
+
     public static void caldat(int julian) {
         final int IGREG = 2299161;
         int ja, jalpha, jb, jc, jd, je;

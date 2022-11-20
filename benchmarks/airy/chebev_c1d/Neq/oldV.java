@@ -20,6 +20,10 @@ public class oldV {//test airy include all
         1.2719271366546e-3, -4.9717367042e-6, -3.31261198e-8,
         2.423096e-10, -1.702e-13, -1.49e-15};
 
+    public static double snippet(double a, double b, int m, double x) {
+        return chebev_c1d(a, b, m, x);
+    }
+
     private static void beschb(double x) {
         final int NUSE1 = 7, NUSE2 = 8;
 

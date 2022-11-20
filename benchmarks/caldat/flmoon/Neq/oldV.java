@@ -5,6 +5,10 @@ public class oldV {
     public static double frac = 0.0;
     public static int mm, id, iyyy;
 
+    public static void snippet(int n, int nph) {
+        flmoon(n, nph);
+    }
+
     public static void flmoon(int n, int nph) {
         final double RAD = 3.141592653589793238 / 180.0;
         int i;

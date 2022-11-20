@@ -1,6 +1,10 @@
 package benchmarks.clever.LoopUnreach2.Eq;
 
 public class newV {
+    public static int snippet(int x) {
+        return new newV().main(x);
+    }
+
     private int foo(int a, int b) {
         int c = 0;
         if (a < 0) {

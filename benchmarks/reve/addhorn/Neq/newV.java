@@ -1,6 +1,10 @@
 package benchmarks.reve.addhorn.Neq;
 
 public class newV {
+    public static int snippet(int m, int n) {
+        return new newV().f(m, n);
+    }
+
     int f(int i, int j) {
         int r;
         r = 0;

@@ -1,6 +1,10 @@
 package benchmarks.clever.fib.Neq;
 
 public class newV {
+    public static int snippet(int x) {
+        return new newV().fib(x);
+    }
+
     private int lib(int n) {
         int a = 0;//change
         int b = 0;//change

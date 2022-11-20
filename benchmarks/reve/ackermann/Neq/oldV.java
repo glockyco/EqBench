@@ -1,6 +1,10 @@
 package benchmarks.reve.ackermann.Neq;
 
 public class oldV {
+    public static int snippet(int m, int n) {
+        return new oldV().f(m, n);
+    }
+
     int f(int m, int n) {
         int r;
         int x;

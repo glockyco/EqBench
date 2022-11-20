@@ -1,6 +1,10 @@
 package benchmarks.clever.Comp.Eq;
 
 public class newV {
+    public static int snippet() {
+        return new newV().main();
+    }
+
     private int foo(int a, int b) {
         if (a < b) {//change
             return 1;

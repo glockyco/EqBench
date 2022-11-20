@@ -1,6 +1,10 @@
 package benchmarks.reve.loop3.Eq;
 
 public class newV {
+    public static int snippet(int n) {
+        return new newV().f(n);
+    }
+
     int f(int n) {
         int i = 1;
         int j = 2;//change

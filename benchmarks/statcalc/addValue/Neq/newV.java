@@ -7,6 +7,10 @@ public class newV {
     static double deviation = 0;
     static int count = 0;
 
+    public static void snippet(double val) {
+        addValue(val);
+    }
+
     public static void addValue(double val) {
         count++;
         //System.out.println("stat ");//change

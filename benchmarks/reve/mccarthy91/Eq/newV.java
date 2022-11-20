@@ -1,6 +1,10 @@
 package benchmarks.reve.mccarthy91.Eq;
 
 public class newV {
+    public static int snippet(int x) {
+        return new newV().f(x);
+    }
+
     int f(int x) {//change
         int r;
         r = 0;

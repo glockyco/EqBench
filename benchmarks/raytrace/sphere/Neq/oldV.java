@@ -3,6 +3,10 @@ package benchmarks.raytrace.sphere.Neq;
 import java.util.*;
 
 public class oldV {
+    public static Sphere snippet(Surface s, Vector3D c, float r) {
+        return new Sphere(s, c, r);
+    }
+
     public static class Sphere {
         Surface surface;
         Vector3D center;

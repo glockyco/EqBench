@@ -1,6 +1,10 @@
 package benchmarks.clever.fib.Eq;
 
 public class oldV {
+    public static int snippet(int x) {
+        return new oldV().fib(x);
+    }
+
     private int lib(int n) {
         if (n == 1) {
             return 1;

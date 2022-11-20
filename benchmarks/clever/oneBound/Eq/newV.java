@@ -1,6 +1,10 @@
 package benchmarks.clever.oneBound.Eq;
 
 public class newV {
+    public static int snippet(int x) {
+        return new newV().client(x);
+    }
+
     private int lib(int x) {
         if (x > 11) {//change
             return 11;

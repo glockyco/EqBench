@@ -1,6 +1,10 @@
 package benchmarks.clever.ltfive.Eq;
 
 public class oldV {
+    public static int snippet(int x) {
+        return new oldV().client(x);
+    }
+
     private int lib(int x) {
         if (x < 5) {
             return 5;

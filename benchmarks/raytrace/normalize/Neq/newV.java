@@ -3,6 +3,10 @@ package benchmarks.raytrace.normalize.Neq;
 import java.util.*;
 
 public class newV {
+    public static void snippet(Vector3D v) {
+        v.normalize();
+    }
+
     public static class Sphere {
         Surface surface;
         Vector3D center;

@@ -3,6 +3,10 @@ package benchmarks.gam.factrl.Neq;
 public class oldV {
     public static double sn, cn, dn;
 
+    public static double snippet(int n) {
+        return factrl(n);
+    }
+
     public static double factrl(int n) {
         int ntop = 4;
         double[] a = {1.0, 1.0, 2.0, 6.0, 24.0};

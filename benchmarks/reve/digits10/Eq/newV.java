@@ -1,6 +1,10 @@
 package benchmarks.reve.digits10.Eq;
 
 public class newV {
+    public static int snippet(int n) {
+        return new newV().f(n);
+    }
+
     int f(int n) {
         int result = 1;
         int b = 1;//change

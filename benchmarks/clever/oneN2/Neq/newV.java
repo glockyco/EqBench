@@ -1,6 +1,10 @@
 package benchmarks.clever.oneN2.Neq;
 
 public class newV {
+    public static int snippet(int x) {
+        return new newV().client(x);
+    }
+
     private int lib(int x) {
         if (x > 10) {
             return 11;

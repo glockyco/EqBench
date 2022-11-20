@@ -1,6 +1,10 @@
 package benchmarks.reve.loop5.Neq;
 
 public class oldV {
+    public static int snippet(int n) {
+        return new oldV().f(n);
+    }
+
     int f(int n) {
         int i;
         int j;

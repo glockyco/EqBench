@@ -1,6 +1,10 @@
 package benchmarks.clever.factorial.Eq;
 
 public class oldV {
+    public static int snippet(int x) {
+        return new oldV().factorial(x);
+    }
+
     private int lib(int n) {
         if (n > 0) {
             int acc = 1;

@@ -1,6 +1,10 @@
 package benchmarks.reve.nestedwhile.Eq;
 
 public class newV {
+    public static int snippet(int x, int g) {
+        return new newV().f(x, g);
+    }
+
     int f(int x, int g) {
         int i = 0;
         while (i < x) {

@@ -1,6 +1,10 @@
 package benchmarks.reve.barthe.Neq;
 
 public class newV {
+    public static int snippet(int n, int c) {
+        return new newV().f(n, c);
+    }
+
     int f(int n, int c) {
         int i;
         int j;

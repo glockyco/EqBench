@@ -3,6 +3,10 @@ package benchmarks.gam.factln.Eq;
 public class newV {
     public static double sn, cn, dn;
 
+    public static double snippet(int n) {
+        return factln(n);
+    }
+
     public static double factln(int n) {
         double[] a = new double[101];
         if (n <= 1) {

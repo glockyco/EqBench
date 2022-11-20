@@ -1,6 +1,10 @@
 package benchmarks.clever.LoopUnreach10.Neq;
 
 public class newV {
+    public static int snippet(int x) {
+        return new newV().main(x);
+    }
+
     private int foo(int a, int b) {
         int c = 1;//change
         if (a < 0) {

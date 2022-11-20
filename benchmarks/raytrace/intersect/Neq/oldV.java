@@ -3,6 +3,10 @@ package benchmarks.raytrace.intersect.Neq;
 import java.util.*;
 
 public class oldV {
+    public static boolean snippet(Sphere s1, Sphere s2) {
+        return s1.intersect(s2);
+    }
+
     public static class Sphere {
         Surface surface;
         Vector3D center;

@@ -1,6 +1,10 @@
 package benchmarks.reve.triangular.Eq;
 
 public class newV {
+    public static int snippet(int n) {
+        return new newV().triangle(n);
+    }
+
     private int g(int n, int s) {//change
         int r;
         r = 0;

@@ -1,6 +1,10 @@
 package benchmarks.clever.odd.Eq;
 
 public class oldV {
+    public static int snippet(int x) {
+        return new oldV().client(x);
+    }
+
     private int lib(int x) {
         int counter = 0;
         while (x % 2 == 0) {

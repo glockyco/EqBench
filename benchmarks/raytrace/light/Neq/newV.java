@@ -3,6 +3,10 @@ package benchmarks.raytrace.light.Neq;
 import java.util.*;
 
 public class newV {
+    public static Light snippet(int type, Vector3D v, float r, float g, float b) {
+        return new Light(type, v, r, g, b);
+    }
+
     public static class Sphere {
         Surface surface;
         Vector3D center;

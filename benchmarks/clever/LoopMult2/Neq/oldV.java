@@ -1,6 +1,10 @@
 package benchmarks.clever.LoopMult2.Neq;
 
 public class oldV {
+    public static int snippet(int x) {
+        return new oldV().main(x);
+    }
+
     private int foo(int a, int b) {
         int c = 0;
         for (int i = 1; i <= b; ++i) {

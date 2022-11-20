@@ -5,6 +5,10 @@ public class oldV {
     private final long y;
     private final int z;
 
+    public static int snippet(int x, long y, int z) {
+        return new oldV(x, y, z).hashCode();
+    }
+
     public oldV(int x, long y, int z) {
         this.x = x;
         this.y = y;

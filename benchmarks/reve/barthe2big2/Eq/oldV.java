@@ -1,6 +1,10 @@
 package benchmarks.reve.barthe2big2.Eq;
 
 public class oldV {
+    public static int snippet(int n) {
+        return new oldV().f(n);
+    }
+
     int f(int n) {
         int i = 1;
         int x = 1;

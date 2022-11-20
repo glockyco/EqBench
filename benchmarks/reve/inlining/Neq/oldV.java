@@ -1,6 +1,10 @@
 package benchmarks.reve.inlining.Neq;
 
 public class oldV {
+    public static int snippet(int x) {
+        return new oldV().f(x);
+    }
+
     int f(int x) {
         if (x > 0) {
             x = f(x - 1);
