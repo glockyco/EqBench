@@ -2,8 +2,8 @@ package benchmarks.clever.ltfive.Eq;
 
 public class newV {
     private int lib(int x) {
-        if (x < 0) {
-            return 0;
+        if (x < 0) {//change
+            return 0;//change
         } else {
             return x;
         }

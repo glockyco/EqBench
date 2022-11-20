@@ -2,7 +2,7 @@ package benchmarks.clever.pos.Neq;
 
 public class newV {
     private int lib(int x) {
-        int counter = 1;
+        int counter = 1;//change
         while (x < 0) {
             x++;
             counter++;

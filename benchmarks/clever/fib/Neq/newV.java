@@ -2,15 +2,15 @@ package benchmarks.clever.fib.Neq;
 
 public class newV {
     private int lib(int n) {
-        int a = 0;
-        int b = 0;
-        int i = 0;
-        while (i < n) {
-            i += 1;
-            a = b;
-            b = a + b;
+        int a = 0;//change
+        int b = 0;//change
+        int i = 0;//change
+        while (i < n) {//change
+            i += 1;//change
+            a = b;//change
+            b = a + b;//change
         }
-        return a;
+        return a;//change
     }
 
     public int fib(int x) {

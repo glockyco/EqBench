@@ -2,7 +2,7 @@ package benchmarks.clever.divide.Neq;
 
 public class newV {
     private int lib(int x, int y) {
-        return x * y;
+        return x * y;//change
     }
 
     public int client(int c, int d) {

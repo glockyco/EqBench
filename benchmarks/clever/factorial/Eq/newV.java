@@ -2,12 +2,12 @@ package benchmarks.clever.factorial.Eq;
 
 public class newV {
     private int lib(int n) {
-        if (n <= 0) {
-            return 0;
-        } else if (n == 1) {
-            return 1;
-        } else {
-            return n * lib(n - 1);
+        if (n <= 0) {//change
+            return 0;//change
+        } else if (n == 1) {//change
+            return 1;//change
+        } else {//change
+            return n * lib(n - 1);//change
         }
     }
 

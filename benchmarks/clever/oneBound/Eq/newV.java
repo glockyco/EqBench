@@ -2,10 +2,10 @@ package benchmarks.clever.oneBound.Eq;
 
 public class newV {
     private int lib(int x) {
-        if (x > 11) {
+        if (x > 11) {//change
             return 11;
         } else {
-            return x - 1;
+            return x - 1;//change
         }
     }
 

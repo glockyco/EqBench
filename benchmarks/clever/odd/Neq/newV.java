@@ -7,7 +7,7 @@ public class newV {
             x = x / 2;
             counter++;
         }
-        return counter + 1;
+        return counter + 1;//change
     }
 
     int client(int x) {
