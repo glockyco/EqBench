@@ -1,4 +1,4 @@
-package benchmarks.CLEVER.is_prime1.Eq;
+package benchmarks.CLEVER.is_prime1.Neq;
 public class newV {
 	int NUMPRIMES = 8;
 	int[] primes = { 2, 3, 5, 7, 11, 13, 17, 19 };

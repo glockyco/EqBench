@@ -1,4 +1,4 @@
-package benchmarks.CLEVER.getSign2.Eq;
+package benchmarks.CLEVER.getSign2.Neq;
 public class newV {
 	private int lib(int x) {
 		if (x <= 0)
