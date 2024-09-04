@@ -131,8 +131,7 @@ public class oldV {
 		//}
 		return;
   }
-}
-class complex{
+public static class complex{
 	private double real;
 	private double imag;
 	
@@ -179,4 +178,5 @@ class complex{
 		double d = Math.sqrt(c.real * c.real) + Math.sqrt(c.imag * c.imag);
 		return new complex((real * c.real + imag * c.imag) / d, Math.round((real * c.imag - imag * c.real) / d));
 	}
+}
 }

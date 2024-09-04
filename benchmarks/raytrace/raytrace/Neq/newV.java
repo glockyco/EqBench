@@ -1,6 +1,7 @@
 package benchmarks.raytrace.raytrace.Neq;
 import java.util.*;
-class Sphere {
+public class newV {
+public static class Sphere {
     Surface surface;
     Vector3D center;
     float radius;
@@ -24,7 +25,7 @@ class Sphere {
         return true;
     }
 }
-class Surface {
+public static class Surface {
     public float ir, ig, ib;        
     public float ka, kd, ks, ns;    
     public float kt, kr, nt;
@@ -36,7 +37,7 @@ class Surface {
         kr = r*I255; kt = t; nt = index;
     }
 }
-class Light {
+public static class Light {
     public static final int AMBIENT = 0;
     public static final int DIRECTIONAL = 1;
     public static final int POINT = 2;
@@ -56,7 +57,7 @@ class Light {
         }
     }
 }
-class Vector3D {
+public static class Vector3D {
   public float x, y, z;
   public Vector3D(float x, float y, float z) {
       this.x = x; this.y = y; this.z = z;
@@ -73,5 +74,6 @@ class Vector3D {
     x *= t;
     y *= t;
     z /= t;//change
+}
 }
 }
