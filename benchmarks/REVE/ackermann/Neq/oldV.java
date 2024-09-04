@@ -1,5 +1,5 @@
 package benchmarks.REVE.ackermann.Neq;
-public class newV {
+public class oldV {
 	int f(int m, int n) {
 		int r;
 		int x;
