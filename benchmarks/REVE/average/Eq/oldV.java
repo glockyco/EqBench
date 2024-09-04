@@ -1,6 +1,6 @@
 package benchmarks.REVE.average.Eq;
 public class oldV {
-	double average(int n, int a[]) {
+	public double average(int n, int a[]) {
 		if (n <= 0) {
 			return 0;
 		}

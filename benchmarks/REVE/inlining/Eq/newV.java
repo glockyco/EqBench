@@ -1,6 +1,6 @@
 package benchmarks.REVE.inlining.Eq;
 public class newV {
-	int f(int x) {
+	public int f(int x) {
 		if (x > 1) {
 		  x = f(x-2);
 		  x = x + 2;

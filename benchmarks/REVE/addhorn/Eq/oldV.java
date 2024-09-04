@@ -1,6 +1,6 @@
 package benchmarks.REVE.addhorn.Eq;
 public class oldV {
-	int f(int i, int j)
+	public int f(int i, int j)
 	{
 	  int r;
 	  r = 0;

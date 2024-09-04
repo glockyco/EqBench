@@ -1,6 +1,6 @@
 package benchmarks.REVE.simpleloop.Eq;
 public class oldV {
-	int f(int z) {
+	public int f(int z) {
 		int i = 0;
 		while (i <= 10) {
 		  i++;

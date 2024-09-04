@@ -1,6 +1,6 @@
 package benchmarks.CLEVER.LoopMult5.Eq;
 public class oldV {
-	private int foo(int a, int b) {
+	public int foo(int a, int b) {
 		int c=0;
 		for (int i=1;i<=b;++i)
 			c+=a;

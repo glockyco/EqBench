@@ -1,6 +1,6 @@
 package benchmarks.REVE.nestedwhile.Eq;
 public class oldV {
-	int f(int x, int g) {
+	public int f(int x, int g) {
 		int i = 0;
 		while (i < x) {
 			i = i + 1;

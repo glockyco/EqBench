@@ -1,6 +1,6 @@
 package benchmarks.REVE.digits10.Eq;
 public class newV {
-	int f(int n) {
+	public int f(int n) {
 		int result = 1;
 		int b = 1;
 		int retval = -1;

@@ -1,6 +1,6 @@
 package benchmarks.REVE.triangular.Eq;
 public class newV {
-	private int g(int n, int s){
+	public int g(int n, int s){
 	  	int r;
 	  	r = 0;
 	  	if (n <= 0) {
@@ -10,7 +10,7 @@ public class newV {
 	  	}
 	  	return r;
 	}
-	int triangle(int n) {
+	public int triangle(int n) {
 	  	int r;
 	  	r = g(n, 0);
 	  	return r;

@@ -1,6 +1,6 @@
 package benchmarks.REVE.loop3.Eq;
 public class newV {
-	int f(int n) {
+	public int f(int n) {
 		int i = 1;
 		int j = 2;
 		if (n < 1) {

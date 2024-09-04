@@ -1,6 +1,6 @@
 package benchmarks.REVE.loop5.Neq;
 public class newV {
-	int f(int n) {
+	public int f(int n) {
 		int i;
 		int j;
 		i = n + 1;

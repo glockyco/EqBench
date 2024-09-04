@@ -1,6 +1,6 @@
 package benchmarks.REVE.barthe.Neq;
 public class newV {
-	int f(int n, int c) {
+	public int f(int n, int c) {
 		int i;
 		int j;
 		int x;

@@ -1,6 +1,6 @@
 package benchmarks.REVE.mccarthy91.Eq;
 public class oldV {
-	int f(int a) {
+	public int f(int a) {
 		int r;
 		r = 0;
 		if (a > 100) {

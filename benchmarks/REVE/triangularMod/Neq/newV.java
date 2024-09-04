@@ -1,6 +1,6 @@
 package benchmarks.REVE.triangularMod.Neq;
 public class newV {
-	private int tr(int n) {
+	public int tr(int n) {
 		int result;
 		int i;
 		i = 0;
@@ -11,7 +11,7 @@ public class newV {
 		}
 		return result;
 	}
-	int f(int m) {
+	public int f(int m) {
 		int result;
 		if (m > 0) {
 			result = tr(m - 1);

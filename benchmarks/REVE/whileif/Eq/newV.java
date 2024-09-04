@@ -1,6 +1,6 @@
 package benchmarks.REVE.whileif.Eq;
 public class newV {
-	int f(int t, int c) {
+	public int f(int t, int c) {
 		int x = 0;
 		while(0 < c) {
 		  if(0 < t) {

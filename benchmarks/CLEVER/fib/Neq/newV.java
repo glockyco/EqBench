@@ -1,6 +1,6 @@
 package benchmarks.CLEVER.fib.Neq;
 public class newV {
-	private int lib(int n){
+	public int lib(int n){
 		int a = 0;
 		int b = 0;
 		int i = 0;

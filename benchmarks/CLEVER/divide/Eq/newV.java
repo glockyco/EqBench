@@ -1,6 +1,6 @@
 package benchmarks.CLEVER.divide.Eq;
 public class newV {
-	private int lib(int x, int y) {
+	public int lib(int x, int y) {
 		if (y == 0) {
 		  return 0;
 		}

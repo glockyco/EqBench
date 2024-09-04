@@ -1,6 +1,6 @@
 package benchmarks.REVE.limit2.Neq;
 public class oldV {
-	int f(int n) {
+	public int f(int n) {
 		int r;
 		r = 0;
 		if (n <= 0) {

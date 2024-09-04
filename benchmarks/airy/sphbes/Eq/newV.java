@@ -19,7 +19,7 @@ public class newV {//test airy include all
 			1.2719271366546e-3,-4.9717367042e-6,-3.31261198e-8,
 			2.423096e-10,-1.702e-13,-1.49e-15};
 		
-	private static void beschb(double x) {
+	public static void beschb(double x) {
 		final int NUSE1=7, NUSE2=8;
 
 		double xx;
@@ -31,7 +31,7 @@ public class newV {//test airy include all
 		gammi= gam2+x*gam1;
 
 	}
-	private static double chebev_c1d(double a, double b,int m, double x) {
+	public static double chebev_c1d(double a, double b,int m, double x) {
     double d=0.0;
     double dd=0.0;
     double sv,y,y2;

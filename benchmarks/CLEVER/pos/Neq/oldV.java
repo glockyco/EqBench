@@ -1,6 +1,6 @@
 package benchmarks.CLEVER.pos.Neq;
 public class oldV {
-    private int lib(int x) {
+    public int lib(int x) {
       int counter = 0;
       while (x < 0) {
         x++;
@@ -8,7 +8,7 @@ public class oldV {
       }
       return counter;
     }
-    int client(int x){
+    public int client(int x){
       if (x > 0) {
         return -lib(-x);
       }else{

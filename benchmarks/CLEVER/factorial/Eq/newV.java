@@ -1,6 +1,6 @@
 package benchmarks.CLEVER.factorial.Eq;
 public class newV {
-	private int lib(int n){
+	public int lib(int n){
 		if(n <= 0){
 			return 0;
 		}else if(n ==1){

@@ -1,12 +1,12 @@
 package benchmarks.CLEVER.ltfive.Eq;
 public class newV {
-	private int lib(int x) {
+	public int lib(int x) {
 		if (x < 0)
 			return 0;
 		else
 			return x;
 	}
-	int client(int x){
+	public int client(int x){
 		if (x < 0){
 			return -lib((-x)*5)/5;
 		}else{

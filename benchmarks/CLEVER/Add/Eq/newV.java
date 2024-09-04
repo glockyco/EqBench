@@ -1,6 +1,6 @@
 package benchmarks.CLEVER.Add.Eq;
 public class newV {
-	private int foo(int a, int b) {
+	public int foo(int a, int b) {
 		int c=b+a;//change
 		return c;
 	}

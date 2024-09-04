@@ -1,6 +1,6 @@
 package benchmarks.REVE.barthe2big.Eq;
 public class oldV {
-	int f(int n) {
+	public int f(int n) {
 		int i = 1;
 		int x = 1;
 		while (i <= n) {

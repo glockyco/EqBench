@@ -1,6 +1,6 @@
 package benchmarks.REVE.ackermann.Neq;
 public class oldV {
-	int f(int m, int n) {
+	public int f(int m, int n) {
 		int r;
 		int x;
 		x = 0;

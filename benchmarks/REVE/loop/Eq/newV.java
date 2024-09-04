@@ -1,6 +1,6 @@
 package benchmarks.REVE.loop.Eq;
 public class newV {
-	float f(float n) {
+	public float f(float n) {
 		float i = n;
 		float j = 0;
 		while (i >= 0) {

@@ -1,6 +1,6 @@
 package benchmarks.CLEVER.fib.Eq;
 public class oldV {
-	private int lib(int n){
+	public int lib(int n){
 		if(n == 1){
 			return 1;
 		}else if(n < 1){

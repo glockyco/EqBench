@@ -1,6 +1,6 @@
 package benchmarks.CLEVER.Comp.Eq;
 public class newV {
-	private int foo(int a, int b){
+	public int foo(int a, int b){
 		if (a<b)//changes
 		  return 1;
 		return 0;

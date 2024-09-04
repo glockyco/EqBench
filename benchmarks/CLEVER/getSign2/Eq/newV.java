@@ -1,6 +1,6 @@
 package benchmarks.CLEVER.getSign2.Eq;
 public class newV {
-	private int lib(int x) {
+	public int lib(int x) {
 		if (x <= 0)
 		   return -1;
 		else

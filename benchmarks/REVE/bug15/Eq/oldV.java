@@ -1,6 +1,6 @@
 package benchmarks.REVE.bug15.Eq;
 public class oldV {
-	int f(int z) {
+	public int f(int z) {
 		int x = 1;
 		int y = 0;
 		while (x <= 9) {
