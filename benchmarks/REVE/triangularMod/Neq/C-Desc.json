@@ -12,5 +12,9 @@
       "change type": "Insertion", 
       "change operation": "increasing the loop iterator"
     }
+  ],
+  "counter-example":
+  [
+    {"int m":2}
   ]
 }
