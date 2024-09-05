@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "benchmark name": { "$ref": "desc-properties-schema.json" },
+    "program name": { "$ref": "desc-properties-schema.json" },
+    "function name": { "$ref": "desc-properties-schema.json" },
+    "LOC": { "$ref": "desc-properties-schema.json" },
+    "# Loops": { "$ref": "desc-properties-schema.json" },
+    "# non-linear arithmetics": { "$ref": "desc-properties-schema.json" },
+    "changes": { "$ref": "desc-properties-schema.json" },
+    "counter-example": { "$ref": "desc-properties-schema.json" }
+  },
+  "required": [
+    "benchmark name",
+    "program name",
+    "function name",
+    "LOC",
+    "# Loops",
+    "# non-linear arithmetics",
+    "changes",
+    "counter-example"
+  ]
+}

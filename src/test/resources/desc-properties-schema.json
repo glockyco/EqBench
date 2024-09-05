@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "benchmark name": {
+    "type": "string"
+  },
+  "program name": {
+    "type": "string"
+  },
+  "function name": {
+    "type": "string"
+  },
+  "method name": {
+    "type": "string"
+  },
+  "LOC": {
+    "type": "integer"
+  },
+  "# loops": {
+    "type": "integer"
+  },
+  "# non-linear-arithmetics": {
+    "type": "integer"
+  },
+  "changes": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "change line": {
+          "oneOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "change type": {
+          "type": "string"
+        },
+        "change operation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "change line",
+        "change type",
+        "change operation"
+      ]
+    }
+  },
+  "counter-example": {
+    "type": "array",
+    "items": {
+      "type": "object"
+    }
+  }
+}
