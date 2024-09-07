@@ -3,38 +3,38 @@
  * Fri Sep 06 21:08:35 GMT 2024
  */
 
-package benchmarks.REVE.ackermann.Neq;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
-import static org.evosuite.runtime.EvoAssertions.*;
-import benchmarks.REVE.ackermann.Neq.newV;
-import org.evosuite.runtime.EvoRunner;
-import org.evosuite.runtime.EvoRunnerParameters;
-import org.junit.runner.RunWith;
-
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
-public class newV_ESTest extends newV_ESTest_scaffolding {
-
-  @Test(timeout = 4000)
-  public void test0()  throws Throwable  {
-      newV newV0 = new newV();
-      int int0 = 41;
-      int int1 = 0;
-      // Undeclared exception!
-      newV0.f(41, 0);
-  }
-
-  @Test(timeout = 4000)
-  public void test1()  throws Throwable  {
-      newV newV0 = new newV();
-      int int0 = 452;
-      int int1 = 1021;
-      newV0.f(int0, int1);
-      int int2 = (-2123);
-      int int3 = 1;
-      newV0.f(int2, int3);
-      int int4 = 0;
-      newV0.f(int2, int4);
-  }
-}
+//package benchmarks.REVE.ackermann.Neq;
+//
+//import org.junit.Test;
+//import static org.junit.Assert.*;
+//import static org.evosuite.runtime.EvoAssertions.*;
+//import benchmarks.REVE.ackermann.Neq.newV;
+//import org.evosuite.runtime.EvoRunner;
+//import org.evosuite.runtime.EvoRunnerParameters;
+//import org.junit.runner.RunWith;
+//
+//@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true)
+//public class newV_ESTest extends newV_ESTest_scaffolding {
+//
+//  @Test(timeout = 4000)
+//  public void test0()  throws Throwable  {
+//      newV newV0 = new newV();
+//      int int0 = 41;
+//      int int1 = 0;
+//      // Undeclared exception!
+//      newV0.f(41, 0);
+//  }
+//
+//  @Test(timeout = 4000)
+//  public void test1()  throws Throwable  {
+//      newV newV0 = new newV();
+//      int int0 = 452;
+//      int int1 = 1021;
+//      newV0.f(int0, int1);
+//      int int2 = (-2123);
+//      int int3 = 1;
+//      newV0.f(int2, int3);
+//      int int4 = 0;
+//      newV0.f(int2, int4);
+//  }
+//}

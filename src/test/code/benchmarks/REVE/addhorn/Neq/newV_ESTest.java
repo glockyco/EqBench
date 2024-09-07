@@ -3,180 +3,180 @@
  * Fri Sep 06 22:25:25 GMT 2024
  */
 
-package benchmarks.REVE.addhorn.Neq;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
-import static org.evosuite.runtime.EvoAssertions.*;
-import benchmarks.REVE.addhorn.Neq.newV;
-import org.evosuite.runtime.EvoRunner;
-import org.evosuite.runtime.EvoRunnerParameters;
-import org.junit.runner.RunWith;
-
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
-public class newV_ESTest extends newV_ESTest_scaffolding {
-
-  @Test(timeout = 4000)
-  public void test0()  throws Throwable  {
-      newV newV0 = new newV();
-      assertNotNull(newV0);
-      
-      int int0 = 2;
-      int int1 = 0;
-      int int2 = newV0.f(2, 0);
-      assertEquals(0, int2);
-      assertTrue(int2 == int1);
-      assertFalse(int2 == int0);
-      
-      int int3 = 0;
-      int int4 = newV0.f(0, 0);
-      assertEquals(0, int4);
-      assertFalse(int4 == int0);
-      assertTrue(int4 == int2);
-      assertTrue(int4 == int1);
-      assertTrue(int4 == int3);
-      
-      int int5 = (-1063);
-      int int6 = newV0.f(int5, int5);
-      int int7 = 0;
-      newV0.f(int2, int7);
-      int int8 = (-357);
-      int int9 = 0;
-      newV0.f(int8, int9);
-      newV0.f(int0, int6);
-      int int10 = 2413;
-      int int11 = newV0.f(int10, int1);
-      int int12 = 1;
-      newV0.f(int2, int12);
-      int int13 = 0;
-      int int14 = 0;
-      newV0.f(int13, int14);
-      int int15 = newV0.f(int7, int3);
-      int int16 = 639;
-      newV0.f(int16, int11);
-      newV0.f(int3, int14);
-      int int17 = 0;
-      int int18 = 0;
-      newV0.f(int17, int18);
-      int int19 = 0;
-      int int20 = 0;
-      newV0.f(int19, int20);
-      newV0.f(int11, int12);
-      newV0.f(int15, int14);
-      newV0.f(int11, int3);
-  }
-
-  @Test(timeout = 4000)
-  public void test1()  throws Throwable  {
-      newV newV0 = new newV();
-      assertNotNull(newV0);
-      
-      int int0 = newV0.f(614, (-1136));
-      assertEquals((-524), int0);
-  }
-
-  @Test(timeout = 4000)
-  public void test2()  throws Throwable  {
-      newV newV0 = new newV();
-      assertNotNull(newV0);
-      
-      int int0 = newV0.f(0, 0);
-      assertEquals(0, int0);
-      
-      int int1 = newV0.f(0, 0);
-      assertEquals(0, int1);
-      assertTrue(int1 == int0);
-      
-      int int2 = 0;
-      int int3 = newV0.f(0, 0);
-      assertEquals(0, int3);
-      assertTrue(int3 == int2);
-      assertTrue(int3 == int0);
-      assertTrue(int3 == int1);
-      
-      int int4 = (-1470);
-      int int5 = newV0.f(0, (-1470));
-      assertEquals((-1470), int5);
-      assertTrue(int5 == int4);
-      assertFalse(int5 == int3);
-      assertFalse(int5 == int1);
-      assertFalse(int5 == int2);
-      assertFalse(int5 == int0);
-      
-      int int6 = newV0.f(0, (-1470));
-      assertEquals((-1470), int6);
-      assertTrue(int6 == int5);
-      assertFalse(int6 == int2);
-      assertFalse(int6 == int3);
-      assertFalse(int6 == int0);
-      assertFalse(int6 == int1);
-      assertTrue(int6 == int4);
-      
-      int int7 = newV0.f(int4, int2);
-      int int8 = 1809;
-      newV0.f(int8, int7);
-  }
-
-  @Test(timeout = 4000)
-  public void test3()  throws Throwable  {
-      newV newV0 = new newV();
-      assertNotNull(newV0);
-      
-      int int0 = (-1769);
-      int int1 = (-4801);
-      newV0.f(int0, int1);
-      int int2 = (-1105);
-      newV0.f(int0, int2);
-      int int3 = 2054;
-      int int4 = (-3582);
-      newV0.f(int3, int4);
-      int int5 = 0;
-      newV0.f(int2, int5);
-      int int6 = 0;
-      int int7 = newV0.f(int6, int5);
-      int int8 = (-210);
-      newV0.f(int7, int8);
-      int int9 = 798;
-      int int10 = 0;
-      newV0.f(int9, int10);
-  }
-
-  @Test(timeout = 4000)
-  public void test4()  throws Throwable  {
-      newV newV0 = new newV();
-      assertNotNull(newV0);
-      
-      int int0 = newV0.f(0, (-296));
-      assertEquals((-296), int0);
-  }
-
-  @Test(timeout = 4000)
-  public void test5()  throws Throwable  {
-      newV newV0 = new newV();
-      int int0 = newV0.f(0, 0);
-      int int1 = 1344;
-      newV0.f(0, 1344);
-      int int2 = 1;
-      int int3 = (-4153);
-      newV0.f(1, (-4153));
-      int int4 = 2995;
-      int int5 = (-68);
-      newV0.f(int4, int5);
-      int int6 = 1;
-      newV0.f(int6, int5);
-      int int7 = (-919);
-      newV0.f(int5, int7);
-      int int8 = 0;
-      newV0.f(int8, int2);
-      int int9 = 0;
-      int int10 = newV0.f(int7, int9);
-      newV0.f(int3, int10);
-      int int11 = 3573;
-      newV0.f(int11, int1);
-      int int12 = 0;
-      int int13 = 2378;
-      newV0.f(int12, int13);
-      int int14 = 0;
-      newV0.f(int14, int0);
-  }
-}
+//package benchmarks.REVE.addhorn.Neq;
+//
+//import org.junit.Test;
+//import static org.junit.Assert.*;
+//import static org.evosuite.runtime.EvoAssertions.*;
+//import benchmarks.REVE.addhorn.Neq.newV;
+//import org.evosuite.runtime.EvoRunner;
+//import org.evosuite.runtime.EvoRunnerParameters;
+//import org.junit.runner.RunWith;
+//
+//@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true)
+//public class newV_ESTest extends newV_ESTest_scaffolding {
+//
+//  @Test(timeout = 4000)
+//  public void test0()  throws Throwable  {
+//      newV newV0 = new newV();
+//      assertNotNull(newV0);
+//
+//      int int0 = 2;
+//      int int1 = 0;
+//      int int2 = newV0.f(2, 0);
+//      assertEquals(0, int2);
+//      assertTrue(int2 == int1);
+//      assertFalse(int2 == int0);
+//
+//      int int3 = 0;
+//      int int4 = newV0.f(0, 0);
+//      assertEquals(0, int4);
+//      assertFalse(int4 == int0);
+//      assertTrue(int4 == int2);
+//      assertTrue(int4 == int1);
+//      assertTrue(int4 == int3);
+//
+//      int int5 = (-1063);
+//      int int6 = newV0.f(int5, int5);
+//      int int7 = 0;
+//      newV0.f(int2, int7);
+//      int int8 = (-357);
+//      int int9 = 0;
+//      newV0.f(int8, int9);
+//      newV0.f(int0, int6);
+//      int int10 = 2413;
+//      int int11 = newV0.f(int10, int1);
+//      int int12 = 1;
+//      newV0.f(int2, int12);
+//      int int13 = 0;
+//      int int14 = 0;
+//      newV0.f(int13, int14);
+//      int int15 = newV0.f(int7, int3);
+//      int int16 = 639;
+//      newV0.f(int16, int11);
+//      newV0.f(int3, int14);
+//      int int17 = 0;
+//      int int18 = 0;
+//      newV0.f(int17, int18);
+//      int int19 = 0;
+//      int int20 = 0;
+//      newV0.f(int19, int20);
+//      newV0.f(int11, int12);
+//      newV0.f(int15, int14);
+//      newV0.f(int11, int3);
+//  }
+//
+//  @Test(timeout = 4000)
+//  public void test1()  throws Throwable  {
+//      newV newV0 = new newV();
+//      assertNotNull(newV0);
+//
+//      int int0 = newV0.f(614, (-1136));
+//      assertEquals((-524), int0);
+//  }
+//
+//  @Test(timeout = 4000)
+//  public void test2()  throws Throwable  {
+//      newV newV0 = new newV();
+//      assertNotNull(newV0);
+//
+//      int int0 = newV0.f(0, 0);
+//      assertEquals(0, int0);
+//
+//      int int1 = newV0.f(0, 0);
+//      assertEquals(0, int1);
+//      assertTrue(int1 == int0);
+//
+//      int int2 = 0;
+//      int int3 = newV0.f(0, 0);
+//      assertEquals(0, int3);
+//      assertTrue(int3 == int2);
+//      assertTrue(int3 == int0);
+//      assertTrue(int3 == int1);
+//
+//      int int4 = (-1470);
+//      int int5 = newV0.f(0, (-1470));
+//      assertEquals((-1470), int5);
+//      assertTrue(int5 == int4);
+//      assertFalse(int5 == int3);
+//      assertFalse(int5 == int1);
+//      assertFalse(int5 == int2);
+//      assertFalse(int5 == int0);
+//
+//      int int6 = newV0.f(0, (-1470));
+//      assertEquals((-1470), int6);
+//      assertTrue(int6 == int5);
+//      assertFalse(int6 == int2);
+//      assertFalse(int6 == int3);
+//      assertFalse(int6 == int0);
+//      assertFalse(int6 == int1);
+//      assertTrue(int6 == int4);
+//
+//      int int7 = newV0.f(int4, int2);
+//      int int8 = 1809;
+//      newV0.f(int8, int7);
+//  }
+//
+//  @Test(timeout = 4000)
+//  public void test3()  throws Throwable  {
+//      newV newV0 = new newV();
+//      assertNotNull(newV0);
+//
+//      int int0 = (-1769);
+//      int int1 = (-4801);
+//      newV0.f(int0, int1);
+//      int int2 = (-1105);
+//      newV0.f(int0, int2);
+//      int int3 = 2054;
+//      int int4 = (-3582);
+//      newV0.f(int3, int4);
+//      int int5 = 0;
+//      newV0.f(int2, int5);
+//      int int6 = 0;
+//      int int7 = newV0.f(int6, int5);
+//      int int8 = (-210);
+//      newV0.f(int7, int8);
+//      int int9 = 798;
+//      int int10 = 0;
+//      newV0.f(int9, int10);
+//  }
+//
+//  @Test(timeout = 4000)
+//  public void test4()  throws Throwable  {
+//      newV newV0 = new newV();
+//      assertNotNull(newV0);
+//
+//      int int0 = newV0.f(0, (-296));
+//      assertEquals((-296), int0);
+//  }
+//
+//  @Test(timeout = 4000)
+//  public void test5()  throws Throwable  {
+//      newV newV0 = new newV();
+//      int int0 = newV0.f(0, 0);
+//      int int1 = 1344;
+//      newV0.f(0, 1344);
+//      int int2 = 1;
+//      int int3 = (-4153);
+//      newV0.f(1, (-4153));
+//      int int4 = 2995;
+//      int int5 = (-68);
+//      newV0.f(int4, int5);
+//      int int6 = 1;
+//      newV0.f(int6, int5);
+//      int int7 = (-919);
+//      newV0.f(int5, int7);
+//      int int8 = 0;
+//      newV0.f(int8, int2);
+//      int int9 = 0;
+//      int int10 = newV0.f(int7, int9);
+//      newV0.f(int3, int10);
+//      int int11 = 3573;
+//      newV0.f(int11, int1);
+//      int int12 = 0;
+//      int int13 = 2378;
+//      newV0.f(int12, int13);
+//      int int14 = 0;
+//      newV0.f(int14, int0);
+//  }
+//}

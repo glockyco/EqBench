@@ -3,106 +3,106 @@
  * Fri Sep 06 22:15:03 GMT 2024
  */
 
-package benchmarks.REVE.addhorn.Eq;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
-import static org.evosuite.runtime.EvoAssertions.*;
-import benchmarks.REVE.addhorn.Eq.newV;
-import org.evosuite.runtime.EvoRunner;
-import org.evosuite.runtime.EvoRunnerParameters;
-import org.junit.runner.RunWith;
-
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
-public class newV_ESTest extends newV_ESTest_scaffolding {
-
-  @Test(timeout = 4000)
-  public void test0()  throws Throwable  {
-      newV newV0 = new newV();
-      newV0.f(1, 1);
-      newV0.f(1, 0);
-  }
-
-  @Test(timeout = 4000)
-  public void test1()  throws Throwable  {
-      newV newV0 = new newV();
-      newV0.f(0, 0);
-      int int0 = 1758;
-      newV0.f(1758, 3098);
-      int int1 = 0;
-      newV0.f(0, 0);
-      int int2 = (-2631);
-      int int3 = 0;
-      int int4 = newV0.f(int2, int3);
-      int int5 = (-1827);
-      newV0.f(int5, int2);
-      int int6 = (-2195);
-      int int7 = (-1464);
-      newV0.f(int6, int7);
-      int int8 = (-553);
-      newV0.f(int3, int8);
-      int int9 = 3492;
-      int int10 = (-1548);
-      int int11 = newV0.f(int9, int10);
-      int int12 = 0;
-      int int13 = 64;
-      newV0.f(int12, int13);
-      int int14 = 1557;
-      newV0.f(int5, int14);
-      int int15 = 0;
-      newV0.f(int15, int0);
-      int int16 = 0;
-      newV0.f(int7, int16);
-      int int17 = 1199;
-      int int18 = 1;
-      newV0.f(int17, int18);
-      int int19 = 1240;
-      newV0.f(int4, int19);
-      newV0.f(int19, int16);
-      newV0.f(int11, int1);
-      newV0.f(int6, int4);
-  }
-
-  @Test(timeout = 4000)
-  public void test2()  throws Throwable  {
-      newV newV0 = new newV();
-      int int0 = (-1);
-      int int1 = (-4944);
-      int int2 = newV0.f(int0, int1);
-      int int3 = 0;
-      int int4 = newV0.f(int3, int1);
-      int int5 = 1498;
-      newV0.f(int2, int5);
-      int int6 = (-3908);
-      newV0.f(int6, int3);
-      int int7 = 1;
-      newV0.f(int4, int7);
-      int int8 = (-1);
-      newV0.f(int8, int2);
-  }
-
-  @Test(timeout = 4000)
-  public void test3()  throws Throwable  {
-      newV newV0 = new newV();
-      newV0.f(268, 268);
-      int int0 = 2032;
-      newV0.f(268, 2032);
-      int int1 = 0;
-      newV0.f(0, 268);
-      newV0.f(0, 2300);
-      newV0.f(268, (-2789));
-      int int2 = (-747);
-      int int3 = newV0.f(int2, int0);
-      int int4 = 0;
-      newV0.f(int3, int4);
-      int int5 = 1054;
-      int int6 = 0;
-      newV0.f(int5, int6);
-      int int7 = (-1);
-      int int8 = 1030;
-      newV0.f(int7, int8);
-      newV0.f(int4, int8);
-      int int9 = 3880;
-      newV0.f(int1, int9);
-  }
-}
+//package benchmarks.REVE.addhorn.Eq;
+//
+//import org.junit.Test;
+//import static org.junit.Assert.*;
+//import static org.evosuite.runtime.EvoAssertions.*;
+//import benchmarks.REVE.addhorn.Eq.newV;
+//import org.evosuite.runtime.EvoRunner;
+//import org.evosuite.runtime.EvoRunnerParameters;
+//import org.junit.runner.RunWith;
+//
+//@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true)
+//public class newV_ESTest extends newV_ESTest_scaffolding {
+//
+//  @Test(timeout = 4000)
+//  public void test0()  throws Throwable  {
+//      newV newV0 = new newV();
+//      newV0.f(1, 1);
+//      newV0.f(1, 0);
+//  }
+//
+//  @Test(timeout = 4000)
+//  public void test1()  throws Throwable  {
+//      newV newV0 = new newV();
+//      newV0.f(0, 0);
+//      int int0 = 1758;
+//      newV0.f(1758, 3098);
+//      int int1 = 0;
+//      newV0.f(0, 0);
+//      int int2 = (-2631);
+//      int int3 = 0;
+//      int int4 = newV0.f(int2, int3);
+//      int int5 = (-1827);
+//      newV0.f(int5, int2);
+//      int int6 = (-2195);
+//      int int7 = (-1464);
+//      newV0.f(int6, int7);
+//      int int8 = (-553);
+//      newV0.f(int3, int8);
+//      int int9 = 3492;
+//      int int10 = (-1548);
+//      int int11 = newV0.f(int9, int10);
+//      int int12 = 0;
+//      int int13 = 64;
+//      newV0.f(int12, int13);
+//      int int14 = 1557;
+//      newV0.f(int5, int14);
+//      int int15 = 0;
+//      newV0.f(int15, int0);
+//      int int16 = 0;
+//      newV0.f(int7, int16);
+//      int int17 = 1199;
+//      int int18 = 1;
+//      newV0.f(int17, int18);
+//      int int19 = 1240;
+//      newV0.f(int4, int19);
+//      newV0.f(int19, int16);
+//      newV0.f(int11, int1);
+//      newV0.f(int6, int4);
+//  }
+//
+//  @Test(timeout = 4000)
+//  public void test2()  throws Throwable  {
+//      newV newV0 = new newV();
+//      int int0 = (-1);
+//      int int1 = (-4944);
+//      int int2 = newV0.f(int0, int1);
+//      int int3 = 0;
+//      int int4 = newV0.f(int3, int1);
+//      int int5 = 1498;
+//      newV0.f(int2, int5);
+//      int int6 = (-3908);
+//      newV0.f(int6, int3);
+//      int int7 = 1;
+//      newV0.f(int4, int7);
+//      int int8 = (-1);
+//      newV0.f(int8, int2);
+//  }
+//
+//  @Test(timeout = 4000)
+//  public void test3()  throws Throwable  {
+//      newV newV0 = new newV();
+//      newV0.f(268, 268);
+//      int int0 = 2032;
+//      newV0.f(268, 2032);
+//      int int1 = 0;
+//      newV0.f(0, 268);
+//      newV0.f(0, 2300);
+//      newV0.f(268, (-2789));
+//      int int2 = (-747);
+//      int int3 = newV0.f(int2, int0);
+//      int int4 = 0;
+//      newV0.f(int3, int4);
+//      int int5 = 1054;
+//      int int6 = 0;
+//      newV0.f(int5, int6);
+//      int int7 = (-1);
+//      int int8 = 1030;
+//      newV0.f(int7, int8);
+//      newV0.f(int4, int8);
+//      int int9 = 3880;
+//      newV0.f(int1, int9);
+//  }
+//}
