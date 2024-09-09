@@ -24,67 +24,6 @@ public class newV_ESTest extends newV_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test1()  throws Throwable  {
-      newV newV0 = new newV();
-      newV0.NUMPRIMES = (-1194);
-      boolean boolean0 = newV0.lib(13, 13);
-      assertTrue(boolean0);
-  }
-
-  @Test(timeout = 4000)
-  public void test2()  throws Throwable  {
-      newV newV0 = new newV();
-      newV0.primes = null;
-      // Undeclared exception!
-      try { 
-        newV0.lib(4292, 4292);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("benchmarks.CLEVER.is_prime1.Eq.newV", e);
-      }
-  }
-
-  @Test(timeout = 4000)
-  public void test3()  throws Throwable  {
-      newV newV0 = new newV();
-      int[] intArray0 = new int[0];
-      newV0.primes = intArray0;
-      // Undeclared exception!
-      try { 
-        newV0.lib((-1899), (-1899));
-        fail("Expecting exception: ArrayIndexOutOfBoundsException");
-      
-      } catch(ArrayIndexOutOfBoundsException e) {
-         //
-         // 0
-         //
-         verifyException("benchmarks.CLEVER.is_prime1.Eq.newV", e);
-      }
-  }
-
-  @Test(timeout = 4000)
-  public void test4()  throws Throwable  {
-      newV newV0 = new newV();
-      int[] intArray0 = new int[4];
-      newV0.primes = intArray0;
-      // Undeclared exception!
-      try { 
-        newV0.lib(0, 20);
-        fail("Expecting exception: ArithmeticException");
-      
-      } catch(ArithmeticException e) {
-         //
-         // / by zero
-         //
-         verifyException("benchmarks.CLEVER.is_prime1.Eq.newV", e);
-      }
-  }
-
-  @Test(timeout = 4000)
   public void test5()  throws Throwable  {
       newV newV0 = new newV();
       boolean boolean0 = newV0.lib(0, 0);

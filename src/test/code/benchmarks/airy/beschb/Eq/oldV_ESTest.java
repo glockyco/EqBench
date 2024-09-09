@@ -59,31 +59,6 @@ public class oldV_ESTest extends oldV_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test07()  throws Throwable  {
-      double[] doubleArray0 = new double[8];
-      doubleArray0[0] = Double.NaN;
-      oldV.c1_d = doubleArray0;
-      oldV.beschb(1800.49781);
-  }
-
-  @Test(timeout = 4000)
-  public void test08()  throws Throwable  {
-      double[] doubleArray0 = new double[2];
-      oldV.c1_d = doubleArray0;
-      double double0 = oldV.chebev_c1d(0.0, 1850.2043923, 0, 0.0);
-      assertEquals(0.0, double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
-  public void test09()  throws Throwable  {
-      double[] doubleArray0 = new double[7];
-      doubleArray0[5] = 3463.56754383185;
-      oldV.c1_d = doubleArray0;
-      double double0 = oldV.chebev_c1d(6.9437664E-9, (-18.5701), 6, (-321.389057204));
-      assertEquals(2.37540959278958E12, double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
   public void test10()  throws Throwable  {
       double double0 = oldV.SIGN(0.0, 0);
       assertEquals(0.0, double0, 0.01);
@@ -93,38 +68,6 @@ public class oldV_ESTest extends oldV_ESTest_scaffolding {
   public void test11()  throws Throwable  {
       double double0 = oldV.MAX(0.0, (-4.9717367042E-6));
       assertEquals(0.0, double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
-  public void test12()  throws Throwable  {
-      oldV.c1_d = null;
-      // Undeclared exception!
-      try { 
-        oldV.chebev_c1d(3622.2426174201014, 0.0, 4, 0.0);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("benchmarks.airy.beschb.Eq.oldV", e);
-      }
-  }
-
-  @Test(timeout = 4000)
-  public void test13()  throws Throwable  {
-      oldV.c1_d = null;
-      // Undeclared exception!
-      try { 
-        oldV.beschb((-481.14058231));
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("benchmarks.airy.beschb.Eq.oldV", e);
-      }
   }
 
   @Test(timeout = 4000)

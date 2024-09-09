@@ -69,15 +69,6 @@ public class newV_ESTest extends newV_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test09()  throws Throwable  {
-      double[] doubleArray0 = new double[8];
-      doubleArray0[1] = (-1.49E-15);
-      newV.c1_d = doubleArray0;
-      double double0 = newV.chebev_c1d(0.0, (-3231.174069436208), (-1), (-1));
-      assertEquals(1.4890777346141182E-15, double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
   public void test10()  throws Throwable  {
       double double0 = newV.chebev_c1d(0.0, (-11.0), (-11), (-11));
       assertEquals((-0.5641861199012017), double0, 0.01);
@@ -93,39 +84,6 @@ public class newV_ESTest extends newV_ESTest_scaffolding {
   public void test12()  throws Throwable  {
       double double0 = newV.MAX((-1093.07953308547), (-1093.07953308547));
       assertEquals((-1093.07953308547), double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
-  public void test13()  throws Throwable  {
-      newV.c1_d = null;
-      // Undeclared exception!
-      try { 
-        newV.chebev_c1d(0.0, 0.0, (-711), 0.0);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("benchmarks.airy.airy.Neq.newV", e);
-      }
-  }
-
-  @Test(timeout = 4000)
-  public void test14()  throws Throwable  {
-      double[] doubleArray0 = new double[1];
-      newV.c1_d = doubleArray0;
-      // Undeclared exception!
-      try { 
-        newV.chebev_c1d(246.0525, 0.0, 2890, 2.423096E-10);
-        fail("Expecting exception: ArrayIndexOutOfBoundsException");
-      
-      } catch(ArrayIndexOutOfBoundsException e) {
-         //
-         // 2
-         //
-         verifyException("benchmarks.airy.airy.Neq.newV", e);
-      }
   }
 
   @Test(timeout = 4000)

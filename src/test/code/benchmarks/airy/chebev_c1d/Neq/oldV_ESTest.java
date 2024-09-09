@@ -64,49 +64,9 @@ public class oldV_ESTest extends oldV_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test08()  throws Throwable  {
-      double[] doubleArray0 = new double[9];
-      doubleArray0[2] = (-2665.08);
-      oldV.c1_d = doubleArray0;
-      oldV.beschb((-113.929));
-  }
-
-  @Test(timeout = 4000)
-  public void test09()  throws Throwable  {
-      double[] doubleArray0 = new double[9];
-      doubleArray0[2] = (-2665.08);
-      oldV.c1_d = doubleArray0;
-      oldV.beschb(0.0);
-  }
-
-  @Test(timeout = 4000)
-  public void test10()  throws Throwable  {
-      double[] doubleArray0 = new double[4];
-      oldV.c1_d = doubleArray0;
-      double double0 = oldV.chebev_c1d(575.7484874088, (-573.517135), 1, (-573.517135));
-      assertEquals(0.0, double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
   public void test11()  throws Throwable  {
       double double0 = oldV.MAX((-3.4706269649E-6), (-3.4706269649E-6));
       assertEquals((-3.4706269649E-6), double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
-  public void test12()  throws Throwable  {
-      oldV.c1_d = null;
-      // Undeclared exception!
-      try { 
-        oldV.chebev_c1d(0.0, 2.423096E-10, (-2167), 0.0);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("benchmarks.airy.chebev_c1d.Neq.oldV", e);
-      }
   }
 
   @Test(timeout = 4000)
@@ -119,22 +79,6 @@ public class oldV_ESTest extends oldV_ESTest_scaffolding {
       } catch(ArrayIndexOutOfBoundsException e) {
          //
          // 571
-         //
-         verifyException("benchmarks.airy.chebev_c1d.Neq.oldV", e);
-      }
-  }
-
-  @Test(timeout = 4000)
-  public void test14()  throws Throwable  {
-      oldV.c1_d = null;
-      // Undeclared exception!
-      try { 
-        oldV.beschb((-3.4706269649E-6));
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
          //
          verifyException("benchmarks.airy.chebev_c1d.Neq.oldV", e);
       }

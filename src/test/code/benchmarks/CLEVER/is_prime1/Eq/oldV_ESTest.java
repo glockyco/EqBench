@@ -17,69 +17,6 @@ import org.junit.runner.RunWith;
 public class oldV_ESTest extends oldV_ESTest_scaffolding {
 
   @Test(timeout = 4000)
-  public void test0()  throws Throwable  {
-      oldV oldV0 = new oldV();
-      oldV0.NUMPRIMES = (-1);
-      boolean boolean0 = oldV0.lib((-534), 3505);
-      assertTrue(boolean0);
-  }
-
-  @Test(timeout = 4000)
-  public void test1()  throws Throwable  {
-      oldV oldV0 = new oldV();
-      oldV0.primes = null;
-      // Undeclared exception!
-      try { 
-        oldV0.lib(0, 1732);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("benchmarks.CLEVER.is_prime1.Eq.oldV", e);
-      }
-  }
-
-  @Test(timeout = 4000)
-  public void test2()  throws Throwable  {
-      oldV oldV0 = new oldV();
-      int[] intArray0 = new int[2];
-      oldV0.primes = intArray0;
-      intArray0[0] = (-1250);
-      intArray0[1] = (-646);
-      // Undeclared exception!
-      try { 
-        oldV0.lib((-1286), (-1286));
-        fail("Expecting exception: ArrayIndexOutOfBoundsException");
-      
-      } catch(ArrayIndexOutOfBoundsException e) {
-         //
-         // 2
-         //
-         verifyException("benchmarks.CLEVER.is_prime1.Eq.oldV", e);
-      }
-  }
-
-  @Test(timeout = 4000)
-  public void test3()  throws Throwable  {
-      oldV oldV0 = new oldV();
-      int[] intArray0 = new int[8];
-      oldV0.primes = intArray0;
-      // Undeclared exception!
-      try { 
-        oldV0.lib((-3055), (-3055));
-        fail("Expecting exception: ArithmeticException");
-      
-      } catch(ArithmeticException e) {
-         //
-         // / by zero
-         //
-         verifyException("benchmarks.CLEVER.is_prime1.Eq.oldV", e);
-      }
-  }
-
-  @Test(timeout = 4000)
   public void test4()  throws Throwable  {
       oldV oldV0 = new oldV();
       boolean boolean0 = oldV0.lib(0, 0);

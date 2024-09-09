@@ -71,68 +71,9 @@ public class newV_ESTest extends newV_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test09()  throws Throwable  {
-      double[] doubleArray0 = new double[10];
-      doubleArray0[0] = (double) 1960;
-      newV.c1_d = doubleArray0;
-      newV.beschb(170.10367576624577);
-  }
-
-  @Test(timeout = 4000)
-  public void test10()  throws Throwable  {
-      double[] doubleArray0 = new double[8];
-      newV.c1_d = doubleArray0;
-      double double0 = newV.chebev_c1d(1262.992762, 1.0, (-1114), 360.4205821);
-      assertEquals(0.0, double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
-  public void test11()  throws Throwable  {
-      double[] doubleArray0 = new double[10];
-      doubleArray0[0] = (double) 1960;
-      newV.c1_d = doubleArray0;
-      double double0 = newV.chebev_c1d((-1.702E-13), 927.5637991474, (-1481), 2080.5503487064);
-      assertEquals(980.0, double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
   public void test12()  throws Throwable  {
       double double0 = newV.MAX((-2554.825843828309), (-1154.53081));
       assertEquals((-1154.53081), double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
-  public void test13()  throws Throwable  {
-      newV.c1_d = null;
-      // Undeclared exception!
-      try { 
-        newV.chebev_c1d(0.0, (-708.12299689792), 1, 2828.6875);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("benchmarks.airy.beschb.Eq.newV", e);
-      }
-  }
-
-  @Test(timeout = 4000)
-  public void test14()  throws Throwable  {
-      double[] doubleArray0 = new double[2];
-      newV.c1_d = doubleArray0;
-      newV.c1_d = null;
-      // Undeclared exception!
-      try { 
-        newV.beschb(2601.266344);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("benchmarks.airy.beschb.Eq.newV", e);
-      }
   }
 
   @Test(timeout = 4000)

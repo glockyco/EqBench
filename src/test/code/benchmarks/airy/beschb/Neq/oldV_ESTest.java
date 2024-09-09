@@ -70,22 +70,6 @@ public class oldV_ESTest extends oldV_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test09()  throws Throwable  {
-      double[] doubleArray0 = new double[9];
-      doubleArray0[1] = (-3120.69339354);
-      oldV.c1_d = doubleArray0;
-      oldV.beschb((-1.49E-15));
-  }
-
-  @Test(timeout = 4000)
-  public void test10()  throws Throwable  {
-      double[] doubleArray0 = new double[9];
-      oldV.c1_d = doubleArray0;
-      double double0 = oldV.chebev_c1d(3566.1, 0.0, (-3959), 0.0);
-      assertEquals(0.0, double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
   public void test11()  throws Throwable  {
       double double0 = oldV.chebev_c1d((-1.0), 0.0012719271366546, 4, (-1218.8));
       assertEquals(203702.14234480038, double0, 0.01);
@@ -95,22 +79,6 @@ public class oldV_ESTest extends oldV_ESTest_scaffolding {
   public void test12()  throws Throwable  {
       double double0 = oldV.MAX((-1656.56), (-3049));
       assertEquals((-1656.56), double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
-  public void test13()  throws Throwable  {
-      oldV.c1_d = null;
-      // Undeclared exception!
-      try { 
-        oldV.chebev_c1d((-510.5045), 0.0, 0, 0.0);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("benchmarks.airy.beschb.Neq.oldV", e);
-      }
   }
 
   @Test(timeout = 4000)

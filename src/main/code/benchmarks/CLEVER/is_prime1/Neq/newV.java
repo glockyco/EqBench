@@ -1,7 +1,7 @@
 package benchmarks.CLEVER.is_prime1.Neq;
 public class newV {
-	int NUMPRIMES = 8;
-	int[] primes = { 2, 3, 5, 7, 11, 13, 17, 19 };
+	public static final int NUMPRIMES = 8;
+	public static final int[] primes = { 2, 3, 5, 7, 11, 13, 17, 19 };
 	public boolean lib(int x, int b) {
 		if (b == 0) {
 		  return false;

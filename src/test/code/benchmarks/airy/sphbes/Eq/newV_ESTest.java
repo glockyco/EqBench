@@ -59,31 +59,6 @@ public class newV_ESTest extends newV_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test07()  throws Throwable  {
-      double[] doubleArray0 = new double[8];
-      doubleArray0[1] = 2.0;
-      newV.c1_d = doubleArray0;
-      newV.beschb(0.0012719271366546);
-  }
-
-  @Test(timeout = 4000)
-  public void test08()  throws Throwable  {
-      double[] doubleArray0 = new double[4];
-      newV.c1_d = doubleArray0;
-      double double0 = newV.chebev_c1d(0.0, (-2817.715983628), 0, 0.0);
-      assertEquals(0.0, double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
-  public void test09()  throws Throwable  {
-      double[] doubleArray0 = new double[8];
-      doubleArray0[0] = (double) 7;
-      newV.c1_d = doubleArray0;
-      double double0 = newV.chebev_c1d((-1.702E-13), (-1207.153096142), 0, (-1.0));
-      assertEquals(3.5, double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
   public void test10()  throws Throwable  {
       double double0 = newV.SIGN(0, 0.0);
       assertEquals(0.0, double0, 0.01);

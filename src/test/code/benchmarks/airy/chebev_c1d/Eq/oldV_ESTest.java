@@ -52,30 +52,6 @@ public class oldV_ESTest extends oldV_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test06()  throws Throwable  {
-      double[] doubleArray0 = new double[9];
-      doubleArray0[0] = (double) 1217;
-      oldV.c1_d = doubleArray0;
-      oldV.beschb(1217.0);
-  }
-
-  @Test(timeout = 4000)
-  public void test07()  throws Throwable  {
-      double[] doubleArray0 = new double[9];
-      doubleArray0[0] = (double) 1217;
-      oldV.c1_d = doubleArray0;
-      oldV.beschb(0);
-  }
-
-  @Test(timeout = 4000)
-  public void test08()  throws Throwable  {
-      double[] doubleArray0 = new double[6];
-      oldV.c1_d = doubleArray0;
-      double double0 = oldV.chebev_c1d((-2151.7686), 2969.0264509575, (-1549), 0.0);
-      assertEquals(0.0, double0, 0.01);
-  }
-
-  @Test(timeout = 4000)
   public void test09()  throws Throwable  {
       double double0 = oldV.chebev_c1d(0.0, (-11.2), 5, (-1205.0202054594508));
       assertEquals(9.647456375385815, double0, 0.01);
