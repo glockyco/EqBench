@@ -5,16 +5,16 @@ public class oldV {//test airy include all
 	public static double aip;
 	public static double bip;
 
-	static double ri,rk,rip,rkp;
-	static double rj,ry,rjp,ryp;
+	public static double ri,rk,rip,rkp;
+	public static double rj,ry,rjp,ryp;
 	
-	static double gam1,gam2,gampl,gammi;
+	public static double gam1,gam2,gampl,gammi;
 	
-	static double[] c1_d = {
+	public static final double[] c1_d = {
 			-1.142022680371168e0,6.5165112670737e-3,
 			3.087090173086e-4,-3.4706269649e-6,6.9437664e-9,
 			3.67795e-11,-1.356e-13};
-	static double[] c2_d = {
+	public static final double[] c2_d = {
 			1.843740587300905e0,-7.68528408447867e-2,
 			1.2719271366546e-3,-4.9717367042e-6,-3.31261198e-8,
 			2.423096e-10,-1.702e-13,-1.49e-15};
