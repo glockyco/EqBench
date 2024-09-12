@@ -240,3 +240,7 @@ gradle-app.setting
 !evosuite/evosuite-1.0.6.jar
 evosuite/evosuite-report
 evosuite/evosuite-tests
+
+### Teralizer ###
+
+**/teralizer/**
