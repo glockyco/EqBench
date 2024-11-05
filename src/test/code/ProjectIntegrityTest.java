@@ -2,8 +2,9 @@ import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.PackageDeclaration;
 import com.networknt.schema.*;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
 import java.io.File;
 import java.io.IOException;
@@ -76,13 +77,12 @@ public class ProjectIntegrityTest {
         List<Path> neqBenchmarks = benchmarkPaths.stream().filter(this::isNeqBenchmark).collect(Collectors.toList());
         List<Path> noBenchmarks = benchmarkPaths.stream().filter(isNoBenchmark).collect(Collectors.toList());
 
-        Assert.assertEquals(EQ_BENCHMARK_COUNT, eqBenchmarks.size());
-        Assert.assertEquals(NEQ_BENCHMARK_COUNT, neqBenchmarks.size());
-        Assert.assertTrue("Unexpected paths: " + noBenchmarks, noBenchmarks.isEmpty());
-
-        for (Path benchmarkPath : benchmarkPaths) {
-            this.testBenchmarkIntegrity(benchmarkPath);
-        }
+        List<Executable> tests = new ArrayList<>();
+        tests.add(() -> Assertions.assertEquals(EQ_BENCHMARK_COUNT, eqBenchmarks.size()));
+        tests.add(() -> Assertions.assertEquals(NEQ_BENCHMARK_COUNT, neqBenchmarks.size()));
+        tests.add(() -> Assertions.assertTrue(noBenchmarks.isEmpty(), "Unexpected paths:) " + noBenchmarks));
+        benchmarkPaths.forEach(path -> tests.add(() -> Assertions.assertDoesNotThrow(() -> this.testBenchmarkIntegrity(path))));
+        Assertions.assertAll(tests);
     }
 
     public boolean isEqBenchmark(Path benchmarkPath) {
@@ -112,18 +112,19 @@ public class ProjectIntegrityTest {
         Set<Path> unexpectedFiles = new HashSet<>(allFiles);
         unexpectedFiles.removeAll(expectedFiles);
 
-        Assert.assertTrue("Unexpected files: " + unexpectedFiles, unexpectedFiles.isEmpty());
-
-        this.testDescFileIntegrity(cDescPath);
-        this.testCFileIntegrity(cOldVPath);
-        this.testCFileIntegrity(cNewVPath);
-        this.testDescFileIntegrity(javaDescPath);
-        this.testJavaFileIntegrity(javaOldVPath);
-        this.testJavaFileIntegrity(javaNewVPath);
+        List<Executable> tests = new ArrayList<>();
+        tests.add(() -> Assertions.assertTrue(unexpectedFiles.isEmpty(), "Unexpected files: " + unexpectedFiles));
+        tests.add(() -> this.testDescFileIntegrity(cDescPath));
+        tests.add(() -> this.testCFileIntegrity(cOldVPath));
+        tests.add(() -> this.testCFileIntegrity(cNewVPath));
+        tests.add(() -> this.testDescFileIntegrity(javaDescPath));
+        tests.add(() -> this.testJavaFileIntegrity(javaOldVPath));
+        tests.add(() -> this.testJavaFileIntegrity(javaNewVPath));
+        Assertions.assertAll(tests);
     }
 
     public void testDescFileIntegrity(Path descFilePath) throws IOException {
-        Assert.assertTrue(descFilePath + " does not exist.", descFilePath.toFile().exists());
+        Assertions.assertTrue(descFilePath.toFile().exists(), descFilePath + " does not exist.");
 
         boolean isEqBenchmark = isEqBenchmark(descFilePath.getParent());
         boolean isJavaDescFile = descFilePath.getFileName().toString().equals(JAVA_DESC_FILE);
@@ -136,23 +137,23 @@ public class ProjectIntegrityTest {
         }
 
         Set<ValidationMessage> errors = schema.validate(new String(Files.readAllBytes(descFilePath)), InputFormat.JSON);
-        Assert.assertTrue("JSON schema violations of '" + descFilePath + "': " + errors, errors.isEmpty());
+        Assertions.assertTrue(errors.isEmpty(), "JSON schema violations of '" + descFilePath + "': " + errors);
     }
 
     private void testCFileIntegrity(Path cFilePath) {
-        Assert.assertTrue(cFilePath + " does not exist.", cFilePath.toFile().exists());
+        Assertions.assertTrue(cFilePath.toFile().exists(), cFilePath + " does not exist.");
     }
 
     public void testJavaFileIntegrity(Path javaFilePath) throws IOException {
-        Assert.assertTrue(javaFilePath + " does not exist.", javaFilePath.toFile().exists());
+        Assertions.assertTrue(javaFilePath.toFile().exists(), javaFilePath + " does not exist.");
 
         String expectedPackageName = BENCHMARKS_PATH.getParent().relativize(javaFilePath.getParent()).toString().replace(File.separatorChar, '.');
 
         CompilationUnit cu = StaticJavaParser.parse(javaFilePath);
         Optional<PackageDeclaration> packageDeclaration = cu.getPackageDeclaration();
 
-        Assert.assertTrue("Package declaration is missing for file '" + javaFilePath + "'.", packageDeclaration.isPresent());
+        Assertions.assertTrue(packageDeclaration.isPresent(), "Package declaration is missing for file '" + javaFilePath + "'.");
         String actualPackageName = packageDeclaration.get().getName().asString();
-        Assert.assertEquals("Unexpected package name '" + expectedPackageName + "' for file '" + javaFilePath + "'. Should be '" + expectedPackageName + "'.", expectedPackageName, actualPackageName);
+        Assertions.assertEquals(expectedPackageName, actualPackageName, "Unexpected package name '" + expectedPackageName + "' for file '" + javaFilePath + "'. Should be '" + expectedPackageName + "'.");
     }
 }
