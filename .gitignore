@@ -234,3 +234,8 @@ gradle-app.setting
 *.hprof
 
 # End of https://www.toptal.com/developers/gitignore/api/java,linux,macos,gradle,windows,intellij+all,maven
+
+.jqwik-database
+
+pom.teralizer.xml
+**/teralizer_generated/**
