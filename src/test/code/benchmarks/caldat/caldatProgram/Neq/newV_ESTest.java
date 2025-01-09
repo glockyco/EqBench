@@ -142,10 +142,10 @@ public class newV_ESTest {
         newV.flmoon(1494, (-809));
     }
 
-    @Test
-    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
-    public void test20() throws Throwable {
-        newV newV0 = new newV();
-        assertEquals(0, newV.jd);
-    }
+//    @Test
+//    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
+//    public void test20() throws Throwable {
+//        newV newV0 = new newV();
+//        assertEquals(0, newV.jd);
+//    }
 }

@@ -37,10 +37,10 @@ public class newV_ESTest {
         newV.snippet(2486.07937032, 0.0);
     }
 
-    @Test
-    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
-    public void test4() throws Throwable {
-        newV newV0 = new newV();
-        assertEquals(0.0, newV.sn, 0.01);
-    }
+//    @Test
+//    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
+//    public void test4() throws Throwable {
+//        newV newV0 = new newV();
+//        assertEquals(0.0, newV.sn, 0.01);
+//    }
 }

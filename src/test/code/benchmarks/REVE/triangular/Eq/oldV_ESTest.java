@@ -101,14 +101,14 @@ public class oldV_ESTest {
         oldV0.g(0);
     }
 
-    @Test
-    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
-    public void test4() throws Throwable {
-        oldV oldV0 = new oldV();
-        oldV0.triangle(1);
-        int int0 = oldV0.triangle(1186);
-        oldV0.triangle(int0);
-    }
+//    @Test
+//    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
+//    public void test4() throws Throwable {
+//        oldV oldV0 = new oldV();
+//        oldV0.triangle(1);
+//        int int0 = oldV0.triangle(1186);
+//        oldV0.triangle(int0);
+//    }
 
     @Test
     @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)

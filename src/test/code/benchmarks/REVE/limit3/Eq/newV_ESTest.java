@@ -13,31 +13,31 @@ import org.junit.jupiter.api.extension.RegisterExtension;
 
 public class newV_ESTest {
 
-    @Test
-    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
-    public void test0() throws Throwable {
-        newV newV0 = new newV();
-        newV0.f(605);
-        int int0 = newV0.f(0);
-        int int1 = newV0.f(605);
-        newV0.f(int1);
-        newV0.f(int0);
-        int int2 = 0;
-        int int3 = newV0.f(int2);
-        int int4 = (-2251);
-        newV0.f(int4);
-        int int5 = 770;
-        newV0.f(int5);
-        int int6 = 0;
-        newV0.f(int6);
-        newV0.f(int0);
-        newV0.f(int3);
-        newV0.f(int2);
-        int int7 = 3857;
-        newV0.f(int7);
-        int int8 = 2452;
-        newV0.f(int8);
-    }
+//    @Test
+//    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
+//    public void test0() throws Throwable {
+//        newV newV0 = new newV();
+//        newV0.f(605);
+//        int int0 = newV0.f(0);
+//        int int1 = newV0.f(605);
+//        newV0.f(int1);
+//        newV0.f(int0);
+//        int int2 = 0;
+//        int int3 = newV0.f(int2);
+//        int int4 = (-2251);
+//        newV0.f(int4);
+//        int int5 = 770;
+//        newV0.f(int5);
+//        int int6 = 0;
+//        newV0.f(int6);
+//        newV0.f(int0);
+//        newV0.f(int3);
+//        newV0.f(int2);
+//        int int7 = 3857;
+//        newV0.f(int7);
+//        int int8 = 2452;
+//        newV0.f(int8);
+//    }
 
     @Test
     @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)

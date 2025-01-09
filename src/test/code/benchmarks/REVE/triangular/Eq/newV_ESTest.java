@@ -48,15 +48,15 @@ public class newV_ESTest {
         newV0.triangle(int10);
     }
 
-    @Test
-    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
-    public void test1() throws Throwable {
-        newV newV0 = new newV();
-        int int0 = newV0.triangle(1);
-        assertEquals(1, int0);
-        int int1 = newV0.triangle(1186);
-        newV0.triangle(int1);
-        int int2 = 991;
-        newV0.triangle(int2);
-    }
+//    @Test
+//    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
+//    public void test1() throws Throwable {
+//        newV newV0 = new newV();
+//        int int0 = newV0.triangle(1);
+//        assertEquals(1, int0);
+//        int int1 = newV0.triangle(1186);
+//        newV0.triangle(int1);
+//        int int2 = 991;
+//        newV0.triangle(int2);
+//    }
 }

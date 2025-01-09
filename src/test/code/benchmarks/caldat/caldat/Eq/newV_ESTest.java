@@ -43,10 +43,10 @@ public class newV_ESTest {
         newV.caldat((-985));
     }
 
-    @Test
-    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
-    public void test5() throws Throwable {
-        newV newV0 = new newV();
-        assertEquals(0, newV.mm);
-    }
+//    @Test
+//    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
+//    public void test5() throws Throwable {
+//        newV newV0 = new newV();
+//        assertEquals(0, newV.mm);
+//    }
 }

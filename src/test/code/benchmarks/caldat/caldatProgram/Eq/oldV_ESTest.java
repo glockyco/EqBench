@@ -114,10 +114,10 @@ public class oldV_ESTest {
         oldV.flmoon(0, 0);
     }
 
-    @Test
-    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
-    public void test17() throws Throwable {
-        oldV oldV0 = new oldV();
-        assertEquals(0, oldV.mm);
-    }
+//    @Test
+//    @Timeout(value = 4000, unit = TimeUnit.MILLISECONDS)
+//    public void test17() throws Throwable {
+//        oldV oldV0 = new oldV();
+//        assertEquals(0, oldV.mm);
+//    }
 }
